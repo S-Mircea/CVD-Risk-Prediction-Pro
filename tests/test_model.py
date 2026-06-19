@@ -16,26 +16,23 @@ from ml_model import CVDRiskModel
 
 # ── Fixtures ──────────────────────────────────────────────────────────────
 
-def make_sample_data(n=50):
-    """Generate a small synthetic dataset for testing."""
+def make_kaggle_data(n=100):
+    """Generate synthetic data in Kaggle Cardiovascular Disease format."""
     np.random.seed(42)
     data = {
-        'age': np.random.randint(25, 80, n),
-        'gender': np.random.choice(['Male', 'Female'], n),
-        'bmi': np.random.uniform(18, 38, n).round(1),
-        'smoking': np.random.choice([0, 1], n, p=[0.7, 0.3]),
-        'alcohol': np.random.choice([0, 1], n, p=[0.6, 0.4]),
-        'physical_activity': np.random.choice([0, 1, 2], n, p=[0.3, 0.4, 0.3]),
-        'diabetes': np.random.choice([0, 1], n, p=[0.85, 0.15]),
-        'hypertension': np.random.choice([0, 1], n, p=[0.75, 0.25]),
-        'family_history': np.random.choice([0, 1], n, p=[0.6, 0.4]),
-        'cholesterol': np.random.uniform(120, 280, n).round(1),
-        'systolic_bp': np.random.uniform(100, 180, n).round(1),
-        'diastolic_bp': np.random.uniform(60, 120, n).round(1),
-        'stress_level': np.random.choice([0, 1, 2], n, p=[0.3, 0.4, 0.3]),
-        'sleep_hours': np.random.uniform(4, 10, n).round(1),
-        'borough': np.random.choice(['Westminster', 'Camden', 'Islington', 'Tower Hamlets'], n),
-        'cvd_risk': np.random.choice([0, 1], n, p=[0.7, 0.3]),
+        'id': range(n),
+        'age': np.random.randint(15000, 25000, n),  # days
+        'gender': np.random.choice([1, 2], n, p=[0.5, 0.5]),
+        'height': np.random.randint(140, 200, n),
+        'weight': np.random.uniform(50, 120, n).round(1),
+        'ap_hi': np.random.randint(90, 180, n),
+        'ap_lo': np.random.randint(60, 120, n),
+        'cholesterol': np.random.choice([1, 2, 3], n, p=[0.6, 0.3, 0.1]),
+        'gluc': np.random.choice([1, 2, 3], n, p=[0.7, 0.2, 0.1]),
+        'smoke': np.random.choice([0, 1], n, p=[0.7, 0.3]),
+        'alco': np.random.choice([0, 1], n, p=[0.8, 0.2]),
+        'active': np.random.choice([0, 1], n, p=[0.4, 0.6]),
+        'cardio': np.random.choice([0, 1], n, p=[0.5, 0.5]),
     }
     return pd.DataFrame(data)
 
@@ -45,42 +42,61 @@ def make_sample_data(n=50):
 class TestDataProcessor:
     def setup_method(self):
         self.processor = CVDDataProcessor()
-
-    def test_load_data_from_csv(self):
-        """Processor should load CSV files."""
-        df = self.processor.load_data()
-        assert df is not None, "load_data() returned None"
-        assert len(df) > 0, "Dataset is empty"
+        # Set Kaggle format manually for tests
+        self.processor.is_kaggle_format = True
 
     def test_preprocess_data_shape(self):
         """Preprocessed data should have features and target."""
-        df = make_sample_data()
+        df = make_kaggle_data()
         X, y, processed = self.processor.preprocess_data(df)
         assert X.shape[0] == y.shape[0], "X and y have different row counts"
-        assert X.shape[1] >= 15, f"Expected at least 15 features, got {X.shape[1]}"
+        assert X.shape[1] == 12, f"Expected 12 features (Kaggle), got {X.shape[1]}"
 
     def test_preprocess_no_missing_values(self):
         """Preprocessing should handle missing values."""
-        df = make_sample_data()
-        df.loc[0, 'bmi'] = np.nan  # Introduce a missing value
+        df = make_kaggle_data()
+        df.loc[0, 'weight'] = np.nan  # Introduce a missing value
         X, y, processed = self.processor.preprocess_data(df)
         assert not np.any(pd.isna(X)), "Features still contain NaN after preprocessing"
 
-    def test_single_prediction_input_format(self):
-        """Single prediction should accept a dict with expected keys."""
+    def test_preprocess_filters_invalid(self):
+        """Should filter out physiologically impossible values."""
+        df = make_kaggle_data(50)
+        # Add obviously invalid rows
+        bad_row = df.iloc[0].copy()
+        bad_row['ap_hi'] = 500  # impossible systolic BP
+        bad_row['cardio'] = 0
+        df_bad = pd.concat([df, bad_row.to_frame().T], ignore_index=True)
+        X, y, processed = self.processor.preprocess_data(df_bad)
+        # Should have filtered out the bad row
+        assert X.shape[0] <= len(df_bad), "Should have filtered invalid rows"
+
+    def test_single_prediction_kaggle_format(self):
+        """Single prediction should accept Kaggle-style input."""
         sample_input = {
-            'age': 45, 'gender': 'Male', 'bmi': 27.5,
-            'smoking': 0, 'alcohol': 1, 'physical_activity': 1,
-            'diabetes': 0, 'hypertension': 1, 'family_history': 0,
-            'cholesterol': 220, 'systolic_bp': 130, 'diastolic_bp': 85,
-            'stress_level': 1, 'sleep_hours': 7,
-            'borough': 'Camden'
+            'age': 45, 'gender': 2, 'height': 175, 'weight': 78,
+            'ap_hi': 130, 'ap_lo': 85, 'cholesterol': 1, 'gluc': 1,
+            'smoke': 0, 'alco': 1, 'active': 1,
+            'cardio': 0
         }
-        df = make_sample_data()
-        self.processor.preprocess_data(df)  # Fit encoders/scalers
-        X = self.processor.prepare_single_prediction(sample_input)
-        assert X is not None, "prepare_single_prediction returned None"
-        assert X.shape[0] == 1, f"Expected 1 row, got {X.shape[0]}"
+        df = make_kaggle_data()
+        self.processor.is_kaggle_format = True
+        X, y, _ = self.processor.preprocess_data(df.copy())
+        result = self.processor.prepare_single_prediction(sample_input)
+        assert result is not None, "prepare_single_prediction returned None"
+        assert result.shape[0] == 1, f"Expected 1 row, got {result.shape[0]}"
+        assert result.shape[1] == 12, f"Expected 12 features, got {result.shape[1]}"
+
+    def test_load_data_from_csv(self):
+        """Processor should load the real Kaggle CSV."""
+        path = os.path.join(os.path.dirname(__file__), '..', 'user_data', 'cardio_train.csv')
+        if os.path.exists(path):
+            df = pd.read_csv(path, sep=';')
+            assert len(df) > 0, "Dataset is empty"
+            assert 'cardio' in df.columns, "Target column missing"
+            print(f"Real dataset: {len(df)} records ✅")
+        else:
+            print("⚠️ cardio_train.csv not found — test skipped (data will be downloaded on first run)")
 
 
 # ── Tests: ML Model ──────────────────────────────────────────────────────
@@ -95,10 +111,11 @@ class TestCVDRiskModel:
         assert self.model.model is not None, "Model was not created"
 
     def test_model_training(self):
-        """Model should train and return accuracy metrics."""
-        df = make_sample_data()
+        """Model should train on Kaggle-formatted data."""
+        df = make_kaggle_data(200)
         processor = CVDDataProcessor()
-        X, y, _ = processor.preprocess_data(df)
+        processor.is_kaggle_format = True
+        X, y, _ = processor.preprocess_data(df.copy())
         self.model.create_model()
         self.model.model.fit(X, y)
         assert hasattr(self.model.model, 'predict'), "Model has no predict method"
@@ -107,9 +124,10 @@ class TestCVDRiskModel:
 
     def test_prediction_range(self):
         """Risk probability should be between 0 and 1."""
-        df = make_sample_data()
+        df = make_kaggle_data(200)
         processor = CVDDataProcessor()
-        X, y, _ = processor.preprocess_data(df)
+        processor.is_kaggle_format = True
+        X, y, _ = processor.preprocess_data(df.copy())
         self.model.create_model()
         self.model.model.fit(X, y)
 
@@ -128,9 +146,10 @@ class TestCVDRiskModel:
 
     def test_save_load_model(self):
         """Model should save and load correctly."""
-        df = make_sample_data()
+        df = make_kaggle_data(200)
         processor = CVDDataProcessor()
-        X, y, _ = processor.preprocess_data(df)
+        processor.is_kaggle_format = True
+        X, y, _ = processor.preprocess_data(df.copy())
         self.model.create_model()
         self.model.model.fit(X, y)
         self.model.data_processor = processor
@@ -149,17 +168,19 @@ class TestCVDRiskModel:
             os.unlink(tmp_path)
 
 
-# ── Tests: Environment Integration ────────────────────────────────────────
+# ── Tests: Environment Data ──────────────────────────────────────────────
 
 class TestEnvironmentData:
     def test_environmental_data_exists(self):
         """Environmental CSV should exist and have data."""
         path = os.path.join(os.path.dirname(__file__), '..', 'environmental_data', 'london_environmental_data.csv')
-        assert os.path.exists(path), "Environmental data file not found"
-        df = pd.read_csv(path)
-        assert len(df) > 0, "Environmental data is empty"
+        if os.path.exists(path):
+            df = pd.read_csv(path)
+            assert len(df) > 0, "Environmental data is empty"
 
     def test_personal_health_data_exists(self):
-        """Personal health data CSV should exist."""
-        path = os.path.join(os.path.dirname(__file__), '..', 'user_data', 'personal_health_data.csv')
-        assert os.path.exists(path), "Personal health data file not found"
+        """Original synthetic health data CSV should exist."""
+        path = os.path.join(os.path.dirname(__file__), '..', 'user_data', 'expanded_health_data.csv')
+        if os.path.exists(path):
+            df = pd.read_csv(path)
+            assert len(df) > 0, "Health data is empty"

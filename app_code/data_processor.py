@@ -15,10 +15,11 @@ class CVDDataProcessor:
 
     def load_data(self):
         """Load data — auto-detect format."""
-        # Prefer Kaggle real dataset if available
-        kaggle_path = '../user_data/cardio_train.csv'
-        synthetic_path = '../user_data/expanded_health_data.csv'
-        env_path = '../environmental_data/expanded_environmental_data.csv'
+        # Use paths relative to this script's location
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        kaggle_path = os.path.join(base_dir, '..', 'user_data', 'cardio_train.csv')
+        synthetic_path = os.path.join(base_dir, '..', 'user_data', 'expanded_health_data.csv')
+        env_path = os.path.join(base_dir, '..', 'environmental_data', 'expanded_environmental_data.csv')
 
         if os.path.exists(kaggle_path):
             print(f"📊 Loading Kaggle dataset ({kaggle_path})")
@@ -103,6 +104,10 @@ class CVDDataProcessor:
     def preprocess_data(self, data):
         """Clean, engineer features, and scale."""
         data = data.copy()
+
+        # If Kaggle format but data hasn't been preprocessed yet (e.g. direct test call)
+        if self.is_kaggle_format and 'ap_hi' in data.columns:
+            data = self._preprocess_kaggle(data)
 
         # Remove invalid values
         if self.is_kaggle_format:
