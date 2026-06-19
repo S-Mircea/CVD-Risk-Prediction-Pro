@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardioPredict - CVD Risk Assessment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f0f0ff 0%, #e6e6fa 50%, #ddd6fe 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            min-height: 600px;
+        }
+        
+        .input-section {
+            padding: 40px;
+            background: linear-gradient(135deg, #f8f6ff 0%, #f0ebff 100%);
+            border-right: 1px solid #e0d9ff;
+        }
+        
+        .results-section {
+            padding: 40px;
+            background: linear-gradient(135deg, #faf8ff 0%, #f5f0ff 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0d9ff;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #9f7aea;
+            box-shadow: 0 0 0 3px rgba(159, 122, 234, 0.1);
+            background: rgba(255, 255, 255, 1);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .predict-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin-top: 20px;
+        }
+        
+        .predict-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+        }
+        
+        .risk-display {
+            text-align: center;
+            width: 100%;
+        }
+        
+        .risk-heart {
+            width: 200px;
+            height: 180px;
+            position: relative;
+            margin: 0 auto 30px;
+            animation: heartbeat 2s infinite;
+        }
+        
+        .heart-shape {
+            position: absolute;
+            width: 200px;
+            height: 160px;
+            transform: rotate(-45deg);
+        }
+        
+        .heart-shape:before,
+        .heart-shape:after {
+            content: '';
+            width: 100px;
+            height: 160px;
+            position: absolute;
+            left: 100px;
+            transform: rotate(-45deg);
+            background: #e74c3c;
+            border-radius: 100px 100px 0 0;
+            transform-origin: 0 100%;
+        }
+        
+        .heart-shape:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        
+        .heart-shape.low-risk:before,
+        .heart-shape.low-risk:after {
+            background: #27ae60;
+        }
+        
+        .heart-shape.medium-risk:before,
+        .heart-shape.medium-risk:after {
+            background: #f39c12;
+        }
+        
+        .heart-shape.high-risk:before,
+        .heart-shape.high-risk:after {
+            background: #e74c3c;
+        }
+        
+        .risk-percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5em;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            z-index: 10;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.1); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.1); }
+            70% { transform: scale(1); }
+        }
+        
+        .risk-percentage {
+            font-size: 3em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .risk-label {
+            font-size: 1.5em;
+            color: #e74c3c;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .risk-description {
+            color: #7f8c8d;
+            line-height: 1.6;
+            max-width: 300px;
+        }
+        
+        .feature-importance {
+            margin-top: 30px;
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede5ff 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e0d9ff;
+        }
+        
+        .feature-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .feature-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .bar-container {
+            width: 60%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+        
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px;
+            color: #856404;
+        }
+        
+        .disclaimer h3 {
+            color: #7c3aed;
+            margin-bottom: 10px;
+        }
+        
+        .environmental-info {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        
+        .environmental-info p {
+            margin: 0;
+            color: #2c3e50;
+        }
+        
+        /* LLM Advice Styles */
+        .llm-advice {
+            background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.1);
+        }
+        
+        .llm-advice h4 {
+            color: #92400e;
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .llm-advice p {
+            margin: 0;
+            color: #451a03;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .llm-status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+        
+        .llm-status.connected {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .llm-status.fallback {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .llm-loading {
+            color: #6b7280;
+            font-style: italic;
+            padding: 10px;
+        }
+        
+        /* Loading spinner styles */
+        .loading-spinner {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .loading-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🫀 CardioPredict</h1>
+            <p>AI-Powered Cardiovascular Disease Risk Assessment</p>
+        </div>
+
+        <div class="main-content">
+            <div class="input-section">
+                <h2 style="color: #2c3e50; margin-bottom: 30px;">Patient Information</h2>
+                
+                <form id="assessmentForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age">Age (years)</label>
+                            <input type="number" id="age" name="age" min="18" max="100" value="45" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="systolic_bp">Systolic BP (mmHg)</label>
+                            <input type="number" id="systolic_bp" name="systolic_bp" min="80" max="250" value="120" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="diastolic_bp">Diastolic BP (mmHg)</label>
+                            <input type="number" id="diastolic_bp" name="diastolic_bp" min="40" max="150" value="80" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cholesterol">Total Cholesterol (mg/dL)</label>
+                            <input type="number" id="cholesterol" name="cholesterol" min="100" max="400" value="200" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bmi">BMI (Body Mass Index)</label>
+                            <input type="number" id="bmi" name="bmi" min="15" max="50" step="0.1" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="smoker">Smoking Status</label>
+                            <select id="smoker" name="smoker" required>
+                                <option value="">Select Status</option>
+                                <option value="Yes">Yes, I smoke</option>
+                                <option value="No">No, I don't smoke</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="family_history">Family History of CVD</label>
+                            <select id="family_history" name="family_history" required>
+                                <option value="">Select Option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="diabetes">Diabetes</label>
+                            <select id="diabetes" name="diabetes" required>
+                                <option value="">Select Option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="high_bp">High Blood Pressure</label>
+                            <select id="high_bp" name="high_bp" required>
+                                <option value="">Select Option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="activity">Physical Activity Level</label>
+                            <select id="activity" name="activity" required>
+                                <option value="">Select Level</option>
+                                <option value="Low">Low (< 30 min/week)</option>
+                                <option value="Moderate">Moderate (30-150 min/week)</option>
+                                <option value="High">High (> 150 min/week)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="alcohol">Alcohol Consumption</label>
+                            <select id="alcohol" name="alcohol" required>
+                                <option value="">Select Level</option>
+                                <option value="None">None</option>
+                                <option value="Light">Light (1-2 drinks/week)</option>
+                                <option value="Moderate">Moderate (3-7 drinks/week)</option>
+                                <option value="Heavy">Heavy (>7 drinks/week)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="stress">Stress Level</label>
+                            <select id="stress" name="stress" required>
+                                <option value="">Select Level</option>
+                                <option value="Low">Low</option>
+                                <option value="Moderate">Moderate</option>
+                                <option value="High">High</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sleep_hours">Sleep Hours per Night</label>
+                            <input type="number" id="sleep_hours" name="sleep_hours" min="3" max="15" step="0.5" required>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="borough">London Borough (Environmental Risk)</label>
+                        <select id="borough" name="borough" required>
+                            <option value="">Select your borough...</option>
+                            <optgroup label="High Risk (Eastern/Central)">
+                                <option value="Barking and Dagenham">Barking and Dagenham</option>
+                                <option value="Tower Hamlets">Tower Hamlets</option>
+                                <option value="Hackney">Hackney</option>
+                                <option value="Newham">Newham</option>
+                                <option value="City of London">City of London</option>
+                                <option value="Westminster">Westminster</option>
+                                <option value="Camden">Camden</option>
+                            </optgroup>
+                            <optgroup label="Medium Risk">
+                                <option value="Islington">Islington</option>
+                                <option value="Southwark">Southwark</option>
+                                <option value="Lambeth">Lambeth</option>
+                                <option value="Greenwich">Greenwich</option>
+                                <option value="Lewisham">Lewisham</option>
+                                <option value="Brent">Brent</option>
+                                <option value="Ealing">Ealing</option>
+                                <option value="Hammersmith and Fulham">Hammersmith and Fulham</option>
+                                <option value="Kensington and Chelsea">Kensington and Chelsea</option>
+                                <option value="Wandsworth">Wandsworth</option>
+                                <option value="Merton">Merton</option>
+                                <option value="Croydon">Croydon</option>
+                                <option value="Bromley">Bromley</option>
+                                <option value="Bexley">Bexley</option>
+                                <option value="Havering">Havering</option>
+                                <option value="Redbridge">Redbridge</option>
+                                <option value="Waltham Forest">Waltham Forest</option>
+                                <option value="Enfield">Enfield</option>
+                                <option value="Haringey">Haringey</option>
+                                <option value="Barnet">Barnet</option>
+                                <option value="Harrow">Harrow</option>
+                                <option value="Hillingdon">Hillingdon</option>
+                                <option value="Hounslow">Hounslow</option>
+                            </optgroup>
+                            <optgroup label="Lower Risk (Western/Outer)">
+                                <option value="Richmond upon Thames">Richmond upon Thames</option>
+                                <option value="Kingston upon Thames">Kingston upon Thames</option>
+                                <option value="Sutton">Sutton</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    
+                    <button type="submit" class="predict-btn">
+                        🔍 Calculate Risk
+                    </button>
+                </form>
+            </div>
+
+            
+            <div class="results-section">
+                <div class="risk-display">
+                    <div class="risk-heart">
+                        <div class="heart-shape" id="heart-shape">
+                            <div class="risk-percentage" id="risk-percentage">--</div>
+                        </div>
+                    </div>
+                    <div class="risk-label" id="risk-label">Enter patient data to calculate</div>
+                    <div class="risk-description" id="risk-description">
+                        Complete the form on the left to get a 10-year cardiovascular disease risk assessment with environmental factors.
+                    </div>
+                    <div class="environmental-info" id="environmental-info" style="display: none;">
+                        <p><strong>Environmental Risk Factor:</strong> <span id="env-risk-text"></span></p>
+                    </div>
+                </div>
+                
+                <div class="feature-importance" id="feature-importance" style="display: none;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">Key Risk Factors</h3>
+                    <div class="feature-bar">
+                        <span class="feature-name">Age</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" id="age-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="feature-bar">
+                        <span class="feature-name">Blood Pressure</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" id="bp-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="feature-bar">
+                        <span class="feature-name">Cholesterol</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" id="chol-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="feature-bar">
+                        <span class="feature-name">Environmental</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" id="env-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Loading Spinner -->
+        <div class="loading-spinner" id="loadingSpinner">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <p>Analyzing your data...</p>
+            </div>
+        </div>
+
+        
+        <div class="disclaimer">
+            <h3>⚠️ Medical Disclaimer</h3>
+            <p>This tool is for educational purposes only and should not replace professional medical advice. Always consult with qualified healthcare providers for medical decisions. The environmental risk factors are based on London-specific research and may not apply to other locations.</p>
+        </div>
+    </div>
+
+    <script>
+        // Environmental risk data for London boroughs
+        const boroughRiskData = {
+            // High Risk Boroughs (Eastern/Central London)
+            'Barking and Dagenham': { multiplier: 1.20, description: 'High air pollution (PM2.5: 15 μg/m³), limited green space, high CVD mortality rate' },
+            'Tower Hamlets': { multiplier: 1.18, description: 'High NO2 levels (45+ μg/m³), urban density, elevated cardiovascular mortality' },
+            'Hackney': { multiplier: 1.17, description: 'Above-average pollution, traffic density, higher CVD hospitalization rates' },
+            'Newham': { multiplier: 1.16, description: 'Industrial pollution exposure, limited green space access' },
+            'City of London': { multiplier: 1.15, description: 'Very high NO2 (87 μg/m³), traffic pollution, urban heat island effect' },
+            'Westminster': { multiplier: 1.14, description: 'Highest NO2 in London (88 μg/m³), heavy traffic exposure' },
+            'Camden': { multiplier: 1.13, description: 'High pollution levels (82.3 μg/m³ NO2), urban environment' },
+            
+            // Medium Risk Boroughs
+            'Islington': { multiplier: 1.08, description: 'Moderate pollution, limited green space' },
+            'Southwark': { multiplier: 1.07, description: 'Mixed pollution exposure, some green areas' },
+            'Lambeth': { multiplier: 1.06, description: 'Urban environment with moderate air quality' },
+            'Greenwich': { multiplier: 1.05, description: 'Some green space, moderate pollution levels' },
+            'Lewisham': { multiplier: 1.05, description: 'Outer London location, mixed environmental factors' },
+            'Brent': { multiplier: 1.06, description: 'Traffic pollution from major roads' },
+            'Ealing': { multiplier: 1.04, description: 'Better air quality, some green space' },
+            'Hammersmith and Fulham': { multiplier: 1.05, description: 'Urban location, moderate pollution' },
+            'Kensington and Chelsea': { multiplier: 1.03, description: 'Central location but better air quality' },
+            'Wandsworth': { multiplier: 1.02, description: 'Good green space access, moderate air quality' },
+            'Merton': { multiplier: 1.03, description: 'Suburban environment, moderate pollution' },
+            'Croydon': { multiplier: 1.04, description: 'Urban center, some pollution exposure' },
+            'Bromley': { multiplier: 1.01, description: 'Lower PM2.5 (12.4 μg/m³), suburban environment' },
+            'Bexley': { multiplier: 1.02, description: 'Outer London, generally better air quality' },
+            'Havering': { multiplier: 1.00, description: 'Low PM2.5 (12.1 μg/m³), rural characteristics' },
+            'Redbridge': { multiplier: 1.02, description: 'Outer London location, moderate environmental risk' },
+            'Waltham Forest': { multiplier: 1.03, description: 'Some green space, moderate pollution levels' },
+            'Enfield': { multiplier: 1.01, description: 'Outer London, better environmental conditions' },
+            'Haringey': { multiplier: 1.04, description: 'Mixed urban environment' },
+            'Barnet': { multiplier: 0.98, description: 'Lower pollution levels, good green space access' },
+            'Harrow': { multiplier: 1.01, description: 'Suburban location, moderate air quality' },
+            'Hillingdon': { multiplier: 1.02, description: 'Airport proximity but generally good air quality' },
+            'Hounslow': { multiplier: 1.03, description: 'Airport impact, moderate pollution levels' },
+            
+            // Lower Risk Boroughs (Western/Outer London)
+            'Richmond upon Thames': { multiplier: 0.85, description: 'Excellent air quality, extensive green space (Richmond Park), lowest CVD mortality' },
+            'Kingston upon Thames': { multiplier: 0.90, description: 'Good air quality, riverside location, ample green space' },
+            'Sutton': { multiplier: 0.95, description: 'Suburban environment, good environmental conditions' }
+        };
+
+        document.getElementById('assessmentForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Show loading spinner
+            document.getElementById('loadingSpinner').style.display = 'flex';
+            
+            // Get form data
+            const formData = new FormData(this);
+            
+            try {
+                const response = await fetch('/assess_risk', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayResults(data.result);
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            } catch (error) {
+                alert('An error occurred: ' + error.message);
+            } finally {
+                // Hide loading spinner
+                document.getElementById('loadingSpinner').style.display = 'none';
+            }
+        });
+        
+        function displayResults(result) {
+            // Calculate risk percentage from probability
+            const riskPercentage = Math.round(result.risk_probability * 100);
+            
+            // Update heart visualization
+            const heart = document.getElementById('heart-shape');
+            const riskLabel = document.getElementById('risk-label');
+            const riskDescription = document.getElementById('risk-description');
+            const riskPercent = document.getElementById('risk-percentage');
+            
+            // Update percentage display
+            riskPercent.textContent = riskPercentage + '%';
+            
+            // Update heart color and risk label based on risk level
+            if (result.risk_level === 'Low Risk') {
+                heart.className = 'heart-shape low-risk';
+                riskLabel.textContent = 'Low Risk';
+                riskLabel.style.color = '#27ae60';
+                riskDescription.textContent = 'Your 10-year cardiovascular disease risk is low. Continue healthy lifestyle practices.';
+            } else if (result.risk_level === 'Moderate Risk') {
+                heart.className = 'heart-shape medium-risk';
+                riskLabel.textContent = 'Moderate Risk';
+                riskLabel.style.color = '#f39c12';
+                riskDescription.textContent = 'Your risk is moderate. Consider lifestyle modifications and discuss with your healthcare provider.';
+            } else {
+                heart.className = 'heart-shape high-risk';
+                riskLabel.textContent = 'High Risk';
+                riskLabel.style.color = '#e74c3c';
+                riskDescription.textContent = 'Your risk is elevated. Please consult with a healthcare professional for comprehensive evaluation and management.';
+            }
+            
+            // Show environmental info if available
+            if (result.environmental_data && result.environmental_data.borough) {
+                const envInfo = document.getElementById('environmental-info');
+                const envText = document.getElementById('env-risk-text');
+                const borough = result.environmental_data.borough;
+                
+                if (boroughRiskData[borough]) {
+                    envText.textContent = boroughRiskData[borough].description;
+                    envInfo.style.display = 'block';
+                    
+                    // Update environmental bar
+                    const envBar = document.getElementById('env-bar');
+                    const multiplier = boroughRiskData[borough].multiplier;
+                    let envBarWidth = 30;
+                    
+                    if (multiplier >= 1.15) envBarWidth = 80; // High risk
+                    else if (multiplier >= 1.05) envBarWidth = 50; // Medium risk
+                    else if (multiplier >= 0.95) envBarWidth = 30; // Low-medium risk
+                    else envBarWidth = 15; // Low risk
+                    
+                    envBar.style.width = envBarWidth + '%';
+                }
+            }
+            
+            // Update feature importance bars with mock data based on form values
+            updateFeatureBars();
+            
+            // Show feature importance section
+            document.getElementById('feature-importance').style.display = 'block';
+            
+            // Display LLM advice if available
+            displayLLMAdvice(result);
+        }
+        
+        function updateFeatureBars() {
+            // Get form values for dynamic bar sizing
+            const age = parseInt(document.getElementById('age').value) || 45;
+            const systolic = parseInt(document.getElementById('systolic_bp').value) || 120;
+            const cholesterol = parseInt(document.getElementById('cholesterol').value) || 200;
+            const borough = document.getElementById('borough').value;
+            
+            // Calculate bar widths based on risk factors
+            let ageBar = Math.min((age - 30) * 2, 100);
+            let bpBar = Math.min(Math.max((systolic - 120) * 2, 0), 100);
+            let cholBar = Math.min(Math.max((cholesterol - 200) * 0.5, 0), 100);
+            let envBar = 30;
+            
+            if (borough && boroughRiskData[borough]) {
+                const multiplier = boroughRiskData[borough].multiplier;
+                if (multiplier >= 1.15) envBar = 80;
+                else if (multiplier >= 1.05) envBar = 50;
+                else if (multiplier >= 0.95) envBar = 30;
+                else envBar = 15;
+            }
+            
+            // Update bars with animation
+            setTimeout(() => {
+                document.getElementById('age-bar').style.width = ageBar + '%';
+                document.getElementById('bp-bar').style.width = bpBar + '%';
+                document.getElementById('chol-bar').style.width = cholBar + '%';
+                document.getElementById('env-bar').style.width = envBar + '%';
+            }, 100);
+        }
+        
+        function displayLLMAdvice(result) {
+            // Remove any existing LLM advice
+            const existingAdvice = document.querySelector('.llm-advice');
+            if (existingAdvice) {
+                existingAdvice.remove();
+            }
+            
+            if (result.llm_advice) {
+                const adviceDiv = document.createElement('div');
+                adviceDiv.className = 'llm-advice';
+                
+                const statusClass = result.llm_available ? 'connected' : 'fallback';
+                const statusText = result.llm_available ? 'Llama AI' : 'Fallback';
+                
+                adviceDiv.innerHTML = `
+                    <h4>
+                        🦙 Personalized Environmental Advice 
+                        <span class="llm-status ${statusClass}">${statusText}</span>
+                    </h4>
+                    <p>${result.llm_advice}</p>
+                `;
+                
+                // Add after environmental info
+                const envInfo = document.getElementById('environmental-info');
+                if (envInfo.parentNode) {
+                    envInfo.parentNode.insertBefore(adviceDiv, envInfo.nextSibling);
+                }
+            }
+        }
+        
+        function clearForm() {
+            document.getElementById('assessmentForm').reset();
+            document.getElementById('feature-importance').style.display = 'none';
+            document.getElementById('environmental-info').style.display = 'none';
+            document.getElementById('risk-percentage').textContent = '--';
+            document.getElementById('risk-label').textContent = 'Enter patient data to calculate';
+            document.getElementById('risk-description').textContent = 'Complete the form on the left to get a 10-year cardiovascular disease risk assessment with environmental factors.';
+            document.getElementById('heart-shape').className = 'heart-shape';
+            
+            // Remove LLM advice
+            const existingAdvice = document.querySelector('.llm-advice');
+            if (existingAdvice) {
+                existingAdvice.remove();
+            }
+        }
+        
+        // Check LLM status on page load
+        async function checkLLMStatus() {
+            try {
+                const response = await fetch('/llm-status');
+                const data = await response.json();
+                
+                if (data.success && data.status.ollama_running) {
+                    console.log('✓ Ollama LLM is available:', data.status.model_name);
+                } else {
+                    console.log('⚠ Ollama LLM not available - using fallback advice');
+                }
+            } catch (error) {
+                console.log('⚠ Could not check LLM status');
+            }
+        }
+        
+        // Check LLM status when page loads
+        document.addEventListener('DOMContentLoaded', checkLLMStatus);
+    </script>
+</body>
+</html>

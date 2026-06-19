@@ -1,0 +1,1001 @@
+Age,Gender,Smoker,FamilyHistoryCVD,Diabetes,HighBloodPressure,BMI,TotalCholesterol,SystolicBP,DiastolicBP,PhysicalActivityLevel,AlcoholConsumption,StressLevel,SleepHours,Borough,CVD_Risk
+69,Male,No,Yes,No,Yes,21.6,213.0,136.0,95.0,Moderate,None,Moderate,6.1,Harrow,1
+38,Female,No,Yes,No,Yes,31.8,262.0,90.0,89.0,Moderate,Light,Moderate,6.6,Hillingdon,1
+79,Male,No,Yes,No,No,26.3,143.0,119.0,82.0,Low,Light,Moderate,5.3,Islington,1
+56,Male,No,No,Yes,No,18.0,245.0,146.0,63.0,High,Moderate,Moderate,8.7,Barking and Dagenham,1
+52,Male,No,Yes,Yes,Yes,25.1,216.0,105.0,96.0,High,Moderate,Moderate,11.2,Croydon,1
+71,Female,No,Yes,No,No,18.0,158.0,133.0,85.0,Moderate,Moderate,Moderate,8.1,Bexley,1
+79,Female,No,No,No,No,22.0,137.0,145.0,72.0,High,Moderate,High,5.0,Hillingdon,1
+58,Male,No,No,No,No,22.6,179.0,129.0,76.0,Low,None,Moderate,4.7,Bexley,1
+80,Female,No,No,No,Yes,28.3,236.0,148.0,91.0,Moderate,Heavy,Low,6.7,Tower Hamlets,1
+58,Male,No,Yes,No,No,22.4,196.0,159.0,63.0,Low,Light,Moderate,8.4,Greenwich,1
+52,Female,No,Yes,No,No,21.8,197.0,149.0,92.0,High,Moderate,Low,9.2,Sutton,1
+44,Male,No,No,No,No,18.0,233.0,132.0,76.0,Moderate,Light,High,7.1,Ealing,1
+40,Female,Yes,No,Yes,No,29.5,291.0,162.0,92.0,Low,Heavy,Low,7.4,Islington,1
+79,Female,Yes,No,No,No,29.7,213.0,119.0,88.0,Low,Moderate,Moderate,7.1,Merton,1
+79,Male,No,Yes,Yes,Yes,25.0,185.0,155.0,76.0,Low,Light,Low,4.0,Barking and Dagenham,1
+54,Male,No,Yes,Yes,Yes,21.6,237.0,117.0,72.0,Moderate,Moderate,High,7.5,Barnet,1
+69,Female,No,No,No,No,27.0,197.0,92.0,80.0,Moderate,Light,Moderate,7.1,Tower Hamlets,1
+71,Female,No,No,No,No,25.7,190.0,159.0,96.0,Low,Heavy,Low,4.0,Redbridge,1
+49,Female,Yes,Yes,No,No,22.9,207.0,104.0,70.0,High,Light,Moderate,6.8,Sutton,1
+28,Female,Yes,Yes,Yes,Yes,28.0,222.0,131.0,62.0,Low,Light,High,8.2,Ealing,1
+76,Male,No,No,No,No,28.9,162.0,119.0,96.0,Low,Light,High,7.6,Ealing,1
+18,Male,Yes,Yes,No,No,30.7,235.0,134.0,60.0,Moderate,Heavy,High,5.5,Croydon,1
+33,Male,No,No,No,No,26.9,252.0,98.0,83.0,Moderate,Light,Moderate,7.4,Hillingdon,1
+26,Female,No,No,Yes,Yes,29.9,157.0,132.0,82.0,Moderate,None,Moderate,8.4,Harrow,1
+53,Male,No,No,No,No,26.9,234.0,133.0,62.0,Low,None,Moderate,8.6,Hounslow,1
+58,Female,No,Yes,No,No,20.7,199.0,157.0,69.0,Low,Moderate,Low,5.6,Merton,1
+65,Male,No,No,No,No,25.0,170.0,112.0,68.0,High,Light,Moderate,6.9,Hackney,1
+71,Female,No,No,Yes,No,25.4,235.0,156.0,60.0,Low,Light,Moderate,8.3,Redbridge,1
+78,Female,Yes,No,No,Yes,37.1,199.0,130.0,83.0,High,Moderate,High,7.9,Barking and Dagenham,1
+54,Male,No,No,Yes,No,25.5,230.0,121.0,92.0,Moderate,Light,Low,8.6,Lewisham,1
+84,Male,No,No,No,Yes,26.9,150.0,133.0,86.0,Low,Light,Low,5.7,Sutton,1
+49,Male,No,No,No,No,21.4,256.0,113.0,65.0,Moderate,Moderate,Moderate,8.3,Waltham Forest,1
+26,Female,Yes,No,No,No,22.2,255.0,148.0,71.0,Moderate,Moderate,High,7.5,Enfield,1
+30,Male,No,No,No,No,21.3,220.0,127.0,70.0,Moderate,Moderate,Low,7.1,Bromley,0
+49,Female,No,No,Yes,Yes,24.1,203.0,176.0,60.0,Moderate,Light,Moderate,8.0,Lewisham,1
+66,Female,No,No,No,Yes,22.4,187.0,161.0,82.0,High,Light,Moderate,7.8,Harrow,1
+23,Male,No,No,Yes,No,26.2,174.0,173.0,90.0,Moderate,Moderate,High,4.0,Hackney,1
+34,Male,No,Yes,No,No,20.8,120.0,113.0,93.0,Moderate,Moderate,Low,9.7,Bexley,1
+18,Female,Yes,Yes,No,No,24.7,187.0,136.0,60.0,Moderate,Light,Low,8.4,Harrow,1
+18,Female,No,No,No,No,34.5,241.0,100.0,73.0,High,Light,Moderate,8.9,Sutton,0
+74,Male,No,Yes,Yes,Yes,23.3,189.0,124.0,71.0,Low,Light,Moderate,6.2,Wandsworth,1
+40,Female,No,Yes,Yes,Yes,24.7,221.0,194.0,81.0,Moderate,Light,High,8.5,Ealing,1
+19,Female,No,No,No,No,26.3,185.0,132.0,90.0,Moderate,Moderate,Moderate,9.4,Bromley,0
+50,Female,No,No,No,No,27.9,219.0,153.0,87.0,Moderate,None,High,5.3,Hackney,1
+46,Female,No,No,No,No,24.1,208.0,148.0,73.0,Moderate,Moderate,Moderate,6.1,Bromley,1
+46,Male,No,No,No,No,25.6,180.0,131.0,87.0,Moderate,None,Low,9.5,Brent,1
+66,Female,Yes,No,No,No,23.5,215.0,140.0,60.0,Moderate,Light,High,7.3,Hounslow,1
+29,Male,No,Yes,Yes,No,32.2,182.0,122.0,84.0,Low,Light,Moderate,7.0,Enfield,1
+30,Male,No,No,No,No,25.0,234.0,125.0,71.0,Moderate,Heavy,Low,9.9,Barnet,1
+29,Female,No,No,No,No,30.8,152.0,145.0,90.0,Low,None,High,6.0,Kensington and Chelsea,1
+22,Male,No,No,No,No,27.3,267.0,148.0,87.0,Moderate,Light,Low,7.1,Hillingdon,0
+63,Female,No,No,No,No,24.3,208.0,141.0,93.0,Low,Heavy,Moderate,8.7,Barking and Dagenham,1
+62,Female,Yes,No,No,No,23.3,254.0,90.0,104.0,Low,None,Moderate,6.5,Lewisham,1
+75,Female,No,Yes,No,Yes,29.4,231.0,141.0,91.0,Low,Moderate,High,5.3,Camden,1
+80,Female,No,No,No,Yes,22.6,198.0,90.0,97.0,Moderate,Moderate,Moderate,4.2,Lewisham,1
+53,Male,No,No,Yes,No,27.9,202.0,176.0,86.0,Moderate,None,Moderate,6.4,Hackney,1
+71,Male,No,No,No,No,29.5,207.0,174.0,68.0,Low,Heavy,Low,5.7,Croydon,1
+25,Male,No,No,No,No,30.1,128.0,92.0,85.0,Moderate,None,High,7.9,Lambeth,1
+46,Female,No,No,No,No,25.5,226.0,146.0,82.0,Moderate,Light,Moderate,5.2,Barking and Dagenham,1
+50,Male,No,No,No,No,25.6,261.0,118.0,102.0,Moderate,Moderate,Moderate,7.4,Harrow,1
+50,Male,No,No,No,Yes,18.0,164.0,128.0,79.0,Moderate,Light,High,7.4,Bromley,1
+22,Female,No,Yes,No,No,26.0,202.0,121.0,89.0,Moderate,Light,Low,5.4,Enfield,0
+68,Male,No,Yes,No,No,22.5,173.0,137.0,87.0,High,Light,Low,7.0,Barnet,1
+71,Female,Yes,Yes,No,Yes,26.5,262.0,133.0,97.0,Moderate,None,Moderate,8.5,Bexley,1
+74,Female,Yes,No,No,No,23.7,302.0,158.0,74.0,Low,Light,Low,8.7,Havering,1
+55,Female,Yes,No,No,No,26.8,202.0,162.0,99.0,Moderate,Moderate,High,5.7,Newham,1
+69,Female,No,No,No,No,18.0,278.0,125.0,88.0,Low,Moderate,High,9.9,Richmond upon Thames,1
+46,Male,No,No,No,No,19.2,198.0,138.0,80.0,Low,Heavy,High,4.0,Barnet,1
+60,Male,Yes,No,No,No,25.5,197.0,108.0,87.0,Moderate,Moderate,Low,8.1,Bromley,1
+84,Female,No,No,No,Yes,27.9,201.0,103.0,88.0,Low,Moderate,High,6.2,Kingston upon Thames,1
+59,Female,No,No,Yes,No,25.6,159.0,119.0,62.0,Moderate,Light,Low,9.9,Hackney,1
+43,Male,Yes,No,No,No,28.1,248.0,147.0,71.0,Moderate,None,High,5.9,Lewisham,1
+64,Male,No,Yes,No,No,24.9,120.0,100.0,101.0,Moderate,Moderate,Moderate,9.5,Sutton,1
+31,Male,Yes,No,No,No,29.5,219.0,123.0,94.0,Moderate,Light,Moderate,5.7,Camden,1
+45,Female,No,Yes,No,Yes,23.4,157.0,164.0,93.0,Low,Light,Moderate,7.0,Lewisham,1
+51,Male,No,No,No,No,34.3,256.0,90.0,96.0,Moderate,Moderate,High,8.1,Hounslow,1
+81,Female,No,No,No,Yes,18.3,238.0,131.0,82.0,Moderate,Light,Low,6.5,Hillingdon,1
+21,Male,No,No,No,No,29.2,206.0,166.0,79.0,High,Light,Low,7.8,Ealing,0
+25,Female,Yes,No,No,No,31.0,197.0,112.0,90.0,Moderate,Light,Moderate,7.3,Hammersmith and Fulham,1
+18,Male,No,No,No,No,19.9,232.0,107.0,84.0,High,Light,Moderate,11.2,Ealing,0
+50,Male,Yes,No,No,No,23.0,120.0,170.0,110.0,Moderate,None,Low,7.9,City of London,1
+82,Male,No,No,No,Yes,25.7,159.0,156.0,87.0,Low,Light,Moderate,6.2,Hounslow,1
+26,Male,No,Yes,No,No,24.0,150.0,134.0,85.0,Low,None,Moderate,7.8,Bromley,1
+77,Male,No,No,Yes,No,24.7,187.0,141.0,96.0,Moderate,Light,Low,4.0,Newham,1
+59,Female,No,No,No,No,30.8,184.0,90.0,65.0,Moderate,None,Moderate,4.2,Barnet,1
+40,Male,No,Yes,Yes,Yes,34.0,137.0,106.0,60.0,Moderate,Moderate,High,5.9,Richmond upon Thames,1
+68,Male,No,No,No,Yes,18.0,257.0,154.0,67.0,High,Moderate,Moderate,5.7,Bromley,1
+46,Male,No,No,No,No,32.8,199.0,147.0,95.0,Low,Moderate,Moderate,6.3,Southwark,1
+83,Female,No,No,No,Yes,27.9,213.0,151.0,72.0,Moderate,Moderate,Low,6.6,Tower Hamlets,1
+46,Female,Yes,No,No,No,21.9,319.0,158.0,73.0,High,Light,Low,7.0,Westminster,1
+53,Male,No,No,No,Yes,19.5,211.0,109.0,72.0,Moderate,Moderate,Low,7.3,Hackney,1
+40,Male,No,No,No,No,28.6,198.0,136.0,63.0,Moderate,Moderate,Moderate,10.7,Hillingdon,1
+77,Male,No,Yes,No,No,22.5,208.0,118.0,100.0,Moderate,Heavy,Low,6.1,Bexley,1
+53,Female,No,Yes,No,No,26.2,244.0,96.0,103.0,Moderate,Light,High,6.8,Lewisham,1
+69,Male,No,No,No,No,27.9,253.0,126.0,66.0,Low,Moderate,Moderate,4.7,Newham,1
+34,Male,No,No,No,No,24.2,203.0,126.0,85.0,Moderate,Moderate,Moderate,5.2,City of London,1
+50,Male,No,No,No,No,30.3,126.0,110.0,88.0,Moderate,Light,Low,5.8,Brent,1
+78,Female,No,No,Yes,Yes,23.7,164.0,113.0,60.0,Low,Heavy,High,9.0,Westminster,1
+79,Female,No,No,No,Yes,23.7,178.0,129.0,72.0,Moderate,Light,Moderate,5.9,Merton,1
+64,Female,No,No,No,No,35.7,278.0,119.0,60.0,Moderate,None,Moderate,6.5,Camden,1
+25,Male,No,No,No,No,20.4,169.0,108.0,106.0,Low,Light,Moderate,8.4,Bexley,0
+82,Male,No,Yes,No,No,19.5,214.0,131.0,60.0,Low,Light,High,4.4,Newham,1
+84,Female,No,No,No,No,26.6,239.0,147.0,89.0,Low,Light,Low,7.0,Newham,1
+63,Male,No,No,Yes,Yes,24.6,246.0,108.0,89.0,Moderate,Light,Low,7.9,Hillingdon,1
+24,Female,No,No,No,No,31.5,231.0,137.0,93.0,High,Moderate,Low,7.8,Greenwich,0
+37,Female,No,No,No,No,30.0,180.0,123.0,79.0,High,Heavy,Low,6.3,Tower Hamlets,1
+26,Male,No,No,Yes,No,19.0,178.0,149.0,80.0,Moderate,Heavy,High,6.5,Barnet,1
+31,Male,No,No,No,No,29.5,242.0,103.0,73.0,High,Light,Moderate,5.5,Enfield,1
+43,Female,No,No,No,No,20.8,204.0,97.0,88.0,Moderate,Light,Low,10.0,Tower Hamlets,1
+44,Female,Yes,No,No,No,32.5,263.0,110.0,88.0,Moderate,Light,High,6.8,Merton,1
+79,Male,No,Yes,Yes,No,23.5,201.0,140.0,69.0,Moderate,Moderate,High,7.3,Hackney,1
+43,Female,Yes,Yes,No,No,29.3,195.0,145.0,103.0,Moderate,None,High,6.8,Havering,1
+41,Male,No,Yes,No,No,26.4,207.0,142.0,60.0,Moderate,Light,Low,7.0,Barnet,1
+43,Female,Yes,Yes,No,Yes,18.0,186.0,109.0,60.0,Moderate,Heavy,Low,8.2,Greenwich,1
+42,Male,Yes,No,No,Yes,28.8,178.0,143.0,95.0,Low,Moderate,Moderate,7.9,Hammersmith and Fulham,1
+36,Male,No,No,No,Yes,29.9,176.0,134.0,109.0,Moderate,Heavy,Moderate,8.0,Southwark,1
+42,Female,No,No,No,No,27.1,229.0,124.0,82.0,Moderate,None,Low,6.5,Enfield,1
+33,Male,No,No,Yes,No,29.3,205.0,139.0,77.0,Moderate,Heavy,Moderate,8.7,Croydon,1
+56,Male,No,No,No,Yes,31.4,120.0,157.0,99.0,Moderate,Light,Low,8.4,Lambeth,1
+62,Male,No,Yes,Yes,No,26.9,181.0,155.0,67.0,Moderate,Moderate,Low,6.7,Richmond upon Thames,1
+21,Male,No,No,No,No,23.4,242.0,147.0,84.0,Low,Light,Moderate,5.0,Harrow,0
+72,Female,Yes,Yes,No,Yes,27.0,199.0,143.0,77.0,Moderate,Moderate,Moderate,7.0,Hackney,1
+33,Female,Yes,No,No,No,24.2,258.0,162.0,72.0,Moderate,Light,Moderate,6.4,Hounslow,1
+31,Female,No,No,No,Yes,29.1,182.0,143.0,104.0,High,Light,Moderate,7.7,Merton,1
+32,Female,Yes,Yes,No,Yes,32.2,160.0,150.0,77.0,High,Light,Moderate,6.9,Islington,1
+42,Female,No,No,No,No,25.6,202.0,153.0,75.0,High,Light,Low,7.9,Enfield,1
+74,Male,No,No,No,No,23.5,178.0,117.0,98.0,Moderate,Moderate,Low,9.1,Kensington and Chelsea,1
+79,Male,No,No,Yes,No,34.9,173.0,90.0,67.0,Low,Light,Low,6.7,Newham,1
+84,Male,Yes,No,No,No,28.2,243.0,113.0,82.0,High,Light,Moderate,4.4,Greenwich,1
+22,Female,No,No,No,No,26.2,175.0,148.0,81.0,Moderate,None,Moderate,9.8,Bexley,0
+57,Female,No,No,No,No,19.4,219.0,135.0,85.0,High,None,Moderate,8.4,Redbridge,1
+76,Female,Yes,No,No,Yes,24.1,162.0,136.0,71.0,Low,Moderate,High,7.3,Kingston upon Thames,1
+62,Female,No,Yes,No,No,25.3,206.0,154.0,68.0,Moderate,Light,Low,7.6,Richmond upon Thames,1
+29,Male,Yes,Yes,No,No,26.8,202.0,103.0,91.0,Low,None,Moderate,8.0,Hackney,1
+52,Male,No,Yes,Yes,No,24.4,173.0,129.0,75.0,High,Light,Low,6.5,Hillingdon,1
+54,Female,Yes,No,No,No,24.2,208.0,151.0,65.0,Moderate,Heavy,Low,7.2,Ealing,1
+82,Female,No,No,No,No,23.7,276.0,152.0,106.0,Moderate,None,Moderate,6.1,Richmond upon Thames,1
+50,Male,No,Yes,Yes,No,25.5,120.0,145.0,96.0,Moderate,Light,Low,4.4,Camden,1
+46,Female,No,No,Yes,No,26.4,247.0,119.0,93.0,High,Moderate,Low,7.7,Ealing,1
+39,Female,No,Yes,No,No,27.7,210.0,123.0,103.0,Moderate,Light,Moderate,5.3,City of London,1
+55,Female,No,No,No,No,23.2,173.0,131.0,77.0,Moderate,Heavy,High,8.4,Haringey,1
+44,Male,No,No,No,No,27.4,218.0,141.0,87.0,Low,Light,Moderate,8.0,Wandsworth,1
+81,Female,No,No,No,No,28.1,190.0,163.0,103.0,Moderate,Light,Moderate,7.5,Wandsworth,1
+65,Male,No,No,No,No,23.0,199.0,98.0,88.0,Low,Light,High,6.0,Kensington and Chelsea,1
+38,Female,No,No,No,No,25.3,172.0,179.0,73.0,Moderate,Moderate,High,8.5,Barking and Dagenham,1
+50,Female,No,Yes,No,Yes,29.8,234.0,124.0,81.0,Low,Moderate,Low,4.8,Ealing,1
+50,Female,No,No,No,No,25.1,201.0,134.0,60.0,Low,None,Moderate,6.6,City of London,1
+50,Male,No,Yes,No,No,24.1,243.0,143.0,65.0,High,Light,Moderate,7.5,Kingston upon Thames,1
+78,Female,No,No,No,No,33.2,214.0,138.0,90.0,Low,Light,High,6.1,Havering,1
+24,Female,No,No,No,No,28.6,279.0,157.0,87.0,High,Moderate,Moderate,6.1,Bexley,0
+77,Male,Yes,No,Yes,Yes,24.5,208.0,109.0,72.0,High,Moderate,High,7.9,Lewisham,1
+68,Male,No,No,Yes,Yes,20.8,248.0,120.0,120.0,Moderate,Light,Low,6.7,Harrow,1
+78,Male,No,Yes,No,Yes,25.0,133.0,138.0,90.0,High,None,Moderate,6.3,City of London,1
+21,Male,No,No,No,No,29.5,231.0,192.0,85.0,High,None,High,10.9,Islington,0
+83,Male,No,No,No,No,31.3,218.0,112.0,60.0,Low,Light,High,6.0,Bexley,1
+38,Female,No,No,No,No,23.5,216.0,140.0,84.0,Moderate,Light,Moderate,6.2,Greenwich,1
+19,Female,No,No,No,No,27.3,188.0,97.0,79.0,Moderate,Heavy,Moderate,6.8,Islington,0
+19,Male,No,No,No,No,27.1,171.0,113.0,60.0,Low,Light,High,9.6,City of London,0
+53,Female,No,No,No,No,25.8,219.0,132.0,61.0,Moderate,Light,High,8.5,Hackney,1
+18,Female,No,No,No,No,34.8,150.0,104.0,60.0,Moderate,Moderate,Low,4.5,Sutton,1
+54,Male,No,No,No,No,28.8,239.0,152.0,78.0,Moderate,Moderate,Moderate,9.4,Barking and Dagenham,1
+37,Female,No,No,Yes,No,25.7,199.0,145.0,81.0,Moderate,Light,Low,8.1,Southwark,1
+50,Male,No,Yes,No,No,23.6,200.0,133.0,87.0,High,Moderate,High,6.8,Lambeth,1
+60,Female,No,No,No,Yes,34.4,194.0,152.0,64.0,Moderate,Moderate,Moderate,7.9,Barking and Dagenham,1
+18,Male,No,No,No,No,23.1,219.0,146.0,62.0,Low,Heavy,High,6.9,Waltham Forest,0
+47,Male,No,No,Yes,No,35.6,198.0,134.0,96.0,Moderate,Moderate,Moderate,8.7,Kensington and Chelsea,1
+36,Female,No,No,Yes,No,29.4,273.0,110.0,73.0,Moderate,Moderate,High,4.6,Bexley,1
+50,Male,Yes,No,No,No,30.0,190.0,137.0,102.0,High,Moderate,Moderate,7.8,Hammersmith and Fulham,1
+21,Female,No,No,No,Yes,30.2,223.0,144.0,90.0,Moderate,Light,Moderate,8.9,Westminster,0
+71,Male,No,No,Yes,No,20.6,247.0,157.0,104.0,Low,Light,Moderate,4.0,Tower Hamlets,1
+50,Male,No,Yes,No,No,23.4,147.0,163.0,95.0,Low,Light,High,6.0,Havering,1
+20,Female,No,No,No,No,28.5,202.0,132.0,62.0,Moderate,Light,Moderate,6.8,Barking and Dagenham,0
+60,Male,Yes,No,No,No,28.7,223.0,125.0,86.0,Moderate,Light,Moderate,6.7,Waltham Forest,1
+51,Male,No,No,No,Yes,27.6,156.0,171.0,84.0,High,None,Moderate,7.1,Bexley,1
+25,Female,No,No,No,No,29.7,137.0,110.0,94.0,Moderate,Light,Low,5.5,Redbridge,0
+24,Female,No,No,Yes,No,22.1,222.0,167.0,83.0,Moderate,Heavy,Moderate,7.2,Richmond upon Thames,0
+59,Female,No,Yes,Yes,No,25.4,232.0,140.0,60.0,Low,Light,Low,7.4,Waltham Forest,1
+26,Female,No,No,No,Yes,28.3,246.0,121.0,64.0,Low,Light,Moderate,7.3,Hillingdon,1
+66,Female,No,No,No,Yes,29.0,172.0,146.0,72.0,Moderate,None,High,9.7,Tower Hamlets,1
+35,Male,No,No,No,Yes,23.7,217.0,107.0,76.0,High,Heavy,Moderate,7.8,Lambeth,1
+50,Female,No,Yes,No,No,25.3,195.0,131.0,78.0,High,Moderate,High,8.4,Ealing,1
+27,Male,No,Yes,No,No,28.9,146.0,143.0,60.0,Moderate,Light,Low,6.1,Tower Hamlets,1
+56,Male,Yes,Yes,Yes,No,30.2,179.0,97.0,96.0,High,Light,Low,7.3,Southwark,1
+53,Male,Yes,Yes,No,Yes,23.7,159.0,117.0,62.0,Low,Light,Moderate,7.1,Merton,1
+19,Female,Yes,No,No,No,23.9,208.0,103.0,92.0,High,None,Moderate,9.5,Lambeth,0
+61,Male,No,Yes,No,Yes,21.3,151.0,144.0,109.0,Low,Moderate,Moderate,6.6,Sutton,1
+25,Female,No,No,No,Yes,22.7,206.0,132.0,86.0,High,Light,Low,6.0,Croydon,0
+79,Female,No,No,No,No,31.0,188.0,130.0,86.0,Moderate,Heavy,Low,5.6,Waltham Forest,1
+22,Male,No,No,No,No,29.5,231.0,145.0,63.0,High,Heavy,Moderate,6.6,Ealing,0
+49,Male,Yes,No,No,No,26.5,194.0,144.0,94.0,High,Moderate,Moderate,5.8,Sutton,1
+19,Male,No,No,No,Yes,26.3,228.0,113.0,60.0,Moderate,Light,Moderate,10.2,Bexley,0
+72,Female,No,No,No,No,27.8,179.0,164.0,108.0,High,None,Low,7.0,Merton,1
+66,Male,No,No,No,Yes,26.3,196.0,148.0,76.0,Low,Moderate,Moderate,7.4,Havering,1
+24,Female,No,Yes,No,Yes,24.0,191.0,106.0,75.0,Moderate,Moderate,Moderate,5.4,Bexley,1
+37,Male,No,No,No,No,28.8,205.0,116.0,119.0,High,None,Low,8.4,Richmond upon Thames,0
+82,Male,No,No,No,No,31.6,222.0,130.0,60.0,Low,Light,Low,5.4,Wandsworth,1
+25,Female,No,No,Yes,No,29.8,120.0,128.0,79.0,Low,None,Moderate,6.4,Kensington and Chelsea,1
+30,Female,No,No,No,No,28.9,182.0,97.0,99.0,Moderate,Moderate,Low,8.7,Lewisham,0
+51,Female,Yes,Yes,No,No,23.2,197.0,119.0,74.0,Low,Light,Moderate,6.4,Lambeth,1
+24,Female,No,No,Yes,Yes,24.4,207.0,133.0,80.0,Moderate,Moderate,High,7.7,Harrow,1
+69,Male,Yes,Yes,No,No,28.0,159.0,139.0,91.0,Moderate,Light,Moderate,6.4,Hackney,1
+24,Male,No,No,Yes,No,18.2,308.0,122.0,63.0,High,Light,High,6.7,Richmond upon Thames,0
+38,Female,No,Yes,No,No,23.8,216.0,100.0,83.0,Low,Moderate,Low,7.0,Hounslow,1
+77,Female,Yes,No,Yes,No,26.0,289.0,116.0,73.0,Moderate,Moderate,Moderate,8.1,Kingston upon Thames,1
+69,Female,Yes,Yes,No,No,24.8,241.0,136.0,69.0,Low,Light,Moderate,6.7,City of London,1
+75,Female,No,No,No,No,29.2,172.0,130.0,100.0,Low,Moderate,Moderate,5.6,Kingston upon Thames,1
+66,Male,No,No,No,No,23.4,207.0,106.0,81.0,High,Light,High,7.1,Enfield,1
+25,Female,No,No,No,Yes,24.5,207.0,103.0,65.0,High,Heavy,Low,8.8,Camden,0
+24,Male,No,Yes,No,No,23.6,248.0,155.0,60.0,Moderate,None,Low,5.8,Wandsworth,1
+25,Male,No,Yes,No,No,28.4,252.0,105.0,72.0,Moderate,Heavy,Low,7.4,Harrow,1
+58,Female,No,Yes,No,No,25.9,223.0,124.0,90.0,High,Heavy,Moderate,6.9,Newham,1
+19,Male,No,No,No,No,31.8,272.0,145.0,89.0,Moderate,Light,Moderate,5.7,Westminster,1
+32,Male,No,Yes,No,Yes,26.9,164.0,125.0,68.0,Low,None,Low,4.0,Harrow,1
+39,Male,Yes,No,No,Yes,27.3,193.0,129.0,111.0,High,None,Moderate,5.2,Ealing,1
+56,Male,No,Yes,No,No,29.4,167.0,154.0,78.0,Low,Light,Moderate,8.3,Croydon,1
+39,Male,No,Yes,No,No,27.6,174.0,119.0,89.0,Moderate,None,Moderate,8.9,Kensington and Chelsea,1
+39,Male,No,No,Yes,No,35.2,243.0,92.0,81.0,Moderate,Light,Low,9.7,Newham,1
+56,Female,No,No,No,No,30.0,208.0,106.0,77.0,Moderate,Heavy,Moderate,9.0,Southwark,1
+22,Male,No,No,Yes,Yes,24.6,224.0,135.0,77.0,Low,Light,Low,5.1,Merton,1
+38,Female,Yes,No,Yes,No,28.9,258.0,120.0,63.0,Low,Moderate,Low,7.4,Lewisham,1
+75,Female,Yes,No,No,No,20.2,156.0,121.0,68.0,Low,Moderate,Low,5.8,Hillingdon,1
+37,Male,No,No,Yes,No,23.3,227.0,138.0,67.0,Low,Moderate,Low,6.4,Havering,1
+34,Male,No,No,No,No,23.8,302.0,119.0,83.0,Low,Moderate,Moderate,9.3,Kensington and Chelsea,1
+21,Female,No,No,No,No,25.9,173.0,162.0,103.0,High,Light,High,5.5,Kingston upon Thames,0
+41,Female,Yes,No,No,Yes,30.5,174.0,149.0,90.0,Low,Moderate,Moderate,4.0,Harrow,1
+72,Female,No,No,No,Yes,22.5,231.0,118.0,77.0,Moderate,Moderate,High,7.9,Southwark,1
+74,Male,Yes,No,No,Yes,26.8,223.0,167.0,64.0,High,Light,High,6.5,Brent,1
+64,Female,Yes,No,No,No,24.5,244.0,168.0,103.0,High,Light,Low,6.3,Harrow,1
+67,Male,No,No,Yes,No,28.0,166.0,164.0,105.0,High,Light,Low,7.6,Kingston upon Thames,1
+68,Male,No,No,No,No,30.1,192.0,123.0,86.0,Low,Light,Moderate,6.7,Haringey,1
+22,Male,No,No,No,Yes,29.6,257.0,132.0,82.0,Moderate,Moderate,Moderate,6.3,Harrow,1
+74,Female,Yes,No,Yes,Yes,29.1,249.0,128.0,77.0,Low,Light,High,5.7,Newham,1
+31,Male,Yes,No,Yes,Yes,22.6,163.0,124.0,104.0,High,Moderate,Moderate,6.2,Greenwich,1
+74,Male,No,Yes,No,Yes,20.7,156.0,127.0,82.0,Moderate,None,Low,8.2,Greenwich,1
+37,Female,No,No,No,No,30.6,185.0,141.0,99.0,Low,Moderate,Moderate,7.6,Sutton,1
+20,Male,No,Yes,Yes,No,22.6,224.0,105.0,64.0,Moderate,None,Moderate,6.1,Bromley,1
+50,Female,Yes,No,No,Yes,21.9,202.0,139.0,90.0,Low,Light,Moderate,7.3,Richmond upon Thames,1
+34,Female,No,No,No,No,20.6,222.0,125.0,97.0,Moderate,Moderate,Moderate,7.6,Havering,0
+74,Male,No,Yes,No,No,24.2,280.0,165.0,64.0,Moderate,Light,Low,5.9,Tower Hamlets,1
+57,Male,Yes,No,No,No,24.8,167.0,90.0,79.0,Low,Light,High,7.2,Redbridge,1
+32,Female,No,No,No,Yes,27.3,190.0,124.0,60.0,High,Light,High,8.3,Harrow,1
+59,Female,No,No,Yes,No,22.1,200.0,151.0,88.0,Low,Moderate,Low,9.0,Richmond upon Thames,1
+68,Male,No,No,No,Yes,23.9,180.0,125.0,69.0,Moderate,Light,Low,5.8,Richmond upon Thames,1
+72,Male,No,No,No,No,21.4,221.0,131.0,94.0,Moderate,Moderate,Moderate,10.0,Camden,1
+19,Female,No,No,Yes,Yes,29.3,183.0,125.0,87.0,Moderate,Heavy,Low,6.2,Havering,1
+49,Female,No,No,No,No,22.2,217.0,171.0,64.0,High,Light,Moderate,7.0,Islington,1
+33,Female,No,Yes,No,Yes,26.0,212.0,137.0,71.0,Moderate,Moderate,High,7.6,Bexley,1
+20,Female,No,No,No,Yes,33.2,209.0,114.0,89.0,High,Light,Low,7.4,Hammersmith and Fulham,0
+67,Male,No,Yes,No,Yes,27.1,183.0,103.0,96.0,High,None,Moderate,8.1,Westminster,1
+47,Female,No,No,Yes,Yes,28.2,166.0,119.0,74.0,Moderate,Moderate,Low,6.0,Bexley,1
+75,Male,No,No,No,No,21.4,281.0,162.0,88.0,Moderate,Moderate,Low,7.6,Kensington and Chelsea,1
+52,Male,No,No,No,No,24.7,173.0,139.0,65.0,High,Light,Moderate,6.7,Haringey,1
+75,Male,No,No,No,No,18.3,205.0,151.0,60.0,Moderate,Light,Moderate,8.1,Croydon,1
+23,Female,Yes,No,No,No,28.7,276.0,127.0,65.0,High,Light,Moderate,8.7,Waltham Forest,1
+79,Male,No,No,No,No,27.0,197.0,126.0,66.0,Low,Moderate,High,6.7,Bromley,1
+65,Female,No,Yes,No,No,28.2,235.0,150.0,111.0,Low,Light,Moderate,7.9,Westminster,1
+36,Male,Yes,No,No,No,27.5,274.0,126.0,75.0,High,Moderate,Low,7.0,Brent,1
+31,Female,No,No,No,No,19.6,231.0,151.0,67.0,High,Heavy,Moderate,7.6,Lambeth,1
+58,Female,No,No,No,No,31.0,205.0,119.0,60.0,High,Moderate,Moderate,8.3,Waltham Forest,1
+38,Female,No,No,Yes,No,22.3,210.0,150.0,88.0,Moderate,Light,Low,7.3,Hounslow,1
+62,Male,No,Yes,No,No,23.9,210.0,128.0,93.0,High,Light,Low,6.4,Richmond upon Thames,1
+69,Male,No,Yes,No,No,34.4,155.0,154.0,106.0,Moderate,Light,High,5.5,Richmond upon Thames,1
+45,Male,No,No,No,No,28.9,173.0,126.0,60.0,Moderate,Light,High,8.4,Kensington and Chelsea,1
+34,Male,No,No,No,Yes,26.4,181.0,126.0,85.0,Low,Moderate,High,4.0,Lambeth,1
+57,Male,No,No,No,No,18.0,142.0,180.0,69.0,Low,Light,Moderate,8.7,Kingston upon Thames,1
+79,Male,No,No,No,No,27.2,212.0,124.0,60.0,High,Light,High,4.8,Waltham Forest,1
+71,Male,No,No,Yes,No,25.4,227.0,134.0,69.0,High,Light,High,6.5,Lambeth,1
+56,Male,No,No,No,No,24.3,203.0,124.0,82.0,High,None,Moderate,8.1,Wandsworth,1
+62,Male,No,No,No,No,20.5,126.0,147.0,77.0,Low,Light,Moderate,8.2,Barking and Dagenham,1
+50,Male,No,Yes,No,Yes,24.1,206.0,162.0,93.0,Moderate,Light,Moderate,6.6,Hounslow,1
+53,Female,No,No,No,Yes,22.4,188.0,160.0,73.0,Low,None,Moderate,7.8,Havering,1
+80,Male,Yes,No,No,No,31.3,253.0,135.0,94.0,Low,Light,Moderate,5.3,Kingston upon Thames,1
+56,Male,No,No,No,No,27.5,225.0,131.0,69.0,Moderate,Light,Moderate,4.5,Haringey,1
+82,Female,No,No,No,Yes,25.3,169.0,127.0,60.0,High,Light,Low,8.6,Merton,1
+53,Female,Yes,No,No,Yes,21.2,237.0,150.0,70.0,High,Light,High,9.1,Hillingdon,1
+84,Male,No,No,Yes,Yes,34.8,145.0,123.0,83.0,Low,Light,Moderate,6.6,Greenwich,1
+50,Male,No,Yes,Yes,No,31.6,323.0,139.0,65.0,Moderate,Light,Low,6.8,Barking and Dagenham,1
+77,Female,No,No,No,No,31.1,180.0,113.0,83.0,High,Moderate,High,7.2,Kensington and Chelsea,1
+65,Female,Yes,No,No,Yes,33.6,182.0,129.0,63.0,Low,Moderate,High,7.0,Haringey,1
+62,Female,No,Yes,No,No,24.3,196.0,128.0,74.0,Moderate,None,Low,6.6,Harrow,1
+47,Male,No,Yes,No,Yes,26.2,198.0,102.0,60.0,Low,Heavy,Moderate,4.0,Hounslow,1
+35,Male,No,No,No,No,19.8,141.0,141.0,60.0,Moderate,None,Moderate,7.3,Barking and Dagenham,0
+51,Female,No,No,No,No,23.9,173.0,121.0,95.0,Moderate,Light,Moderate,7.8,Lewisham,1
+63,Male,No,Yes,Yes,No,21.5,230.0,133.0,99.0,Low,Light,Low,7.4,Barnet,1
+30,Female,Yes,No,No,No,25.2,293.0,136.0,93.0,Low,Light,Moderate,9.9,Tower Hamlets,1
+54,Male,No,No,No,No,23.2,218.0,139.0,91.0,High,Moderate,Moderate,9.5,Westminster,1
+71,Female,No,No,Yes,Yes,30.3,204.0,136.0,74.0,Low,Moderate,Low,7.4,Brent,1
+37,Male,No,No,No,No,23.9,199.0,112.0,80.0,Low,Light,Moderate,6.9,Havering,1
+72,Male,No,No,No,No,20.2,166.0,143.0,69.0,Low,None,High,7.4,Harrow,1
+68,Female,No,No,No,Yes,25.6,238.0,172.0,62.0,High,None,Moderate,8.9,Lambeth,1
+52,Female,No,No,No,No,25.2,194.0,126.0,97.0,Moderate,Heavy,Moderate,7.9,City of London,1
+78,Female,No,Yes,No,Yes,33.8,190.0,149.0,97.0,Low,None,Moderate,6.4,Bexley,1
+83,Female,No,No,No,No,30.9,165.0,159.0,82.0,Low,None,Low,8.8,Greenwich,1
+32,Female,No,Yes,No,No,27.7,176.0,144.0,98.0,Moderate,Moderate,High,7.9,Tower Hamlets,1
+83,Male,No,Yes,No,No,25.1,165.0,111.0,95.0,Low,Light,Low,7.7,Waltham Forest,1
+31,Female,No,No,No,Yes,18.4,209.0,130.0,68.0,Low,Moderate,Moderate,8.0,Hackney,1
+77,Female,Yes,No,No,No,27.8,170.0,108.0,90.0,Low,Moderate,High,6.6,Hillingdon,1
+72,Female,No,No,No,No,24.9,225.0,99.0,78.0,Moderate,Moderate,Low,7.1,Lewisham,1
+38,Male,Yes,Yes,No,No,24.4,145.0,116.0,89.0,Moderate,Moderate,High,8.0,Tower Hamlets,1
+27,Male,No,No,No,No,26.9,252.0,139.0,113.0,Moderate,Heavy,Low,4.7,Greenwich,1
+70,Female,No,No,No,No,26.9,255.0,107.0,81.0,Moderate,Light,Low,5.9,Wandsworth,1
+48,Male,No,No,Yes,Yes,23.2,184.0,120.0,82.0,Moderate,None,High,5.8,Tower Hamlets,1
+43,Female,No,No,Yes,No,28.8,264.0,134.0,94.0,High,None,Moderate,4.0,Kingston upon Thames,1
+61,Male,No,No,No,No,22.6,245.0,125.0,68.0,Low,Heavy,High,8.1,Islington,1
+61,Male,No,No,No,No,29.4,206.0,128.0,90.0,Moderate,Light,Moderate,7.9,Redbridge,1
+68,Male,No,Yes,No,No,27.1,177.0,90.0,78.0,Moderate,Light,Low,9.1,Richmond upon Thames,1
+27,Female,Yes,Yes,Yes,No,24.3,176.0,127.0,83.0,Moderate,None,Moderate,6.0,Richmond upon Thames,1
+64,Male,No,Yes,Yes,No,35.0,184.0,90.0,80.0,Low,Heavy,Low,6.9,Sutton,1
+35,Female,No,Yes,No,Yes,31.1,225.0,134.0,60.0,High,Light,Low,9.4,Brent,1
+26,Male,No,Yes,No,No,24.5,284.0,125.0,85.0,High,Moderate,Low,8.5,Hackney,1
+51,Female,No,No,No,No,28.7,193.0,137.0,71.0,Moderate,Moderate,Moderate,6.5,Bexley,1
+82,Female,No,Yes,No,No,24.7,224.0,119.0,78.0,Moderate,Light,Low,7.1,Merton,1
+61,Male,No,No,No,No,27.2,175.0,136.0,77.0,Low,Moderate,High,7.8,Croydon,1
+31,Male,No,No,No,Yes,25.1,120.0,146.0,60.0,Moderate,Light,Moderate,6.9,Richmond upon Thames,1
+60,Female,Yes,No,No,No,31.6,178.0,96.0,75.0,Moderate,Moderate,Low,6.3,Newham,1
+44,Male,No,No,No,No,22.9,205.0,100.0,60.0,High,Light,Low,6.6,Richmond upon Thames,1
+42,Female,No,No,No,Yes,26.4,262.0,105.0,60.0,Moderate,Light,High,7.2,Brent,1
+68,Female,No,No,No,No,28.7,227.0,90.0,66.0,Moderate,Light,Low,6.4,Hillingdon,1
+46,Male,Yes,Yes,No,No,25.6,134.0,126.0,105.0,Moderate,Moderate,Low,7.0,Brent,1
+32,Female,Yes,No,No,No,31.9,213.0,143.0,67.0,Moderate,Light,Low,8.2,Harrow,1
+42,Male,Yes,No,No,No,27.6,257.0,137.0,74.0,Moderate,Moderate,Moderate,5.1,Hackney,1
+45,Male,No,No,No,No,30.5,221.0,127.0,86.0,Moderate,Light,Moderate,7.5,Tower Hamlets,1
+48,Female,Yes,No,No,No,24.7,206.0,113.0,111.0,Moderate,Moderate,Moderate,4.6,Hackney,1
+78,Female,No,No,Yes,Yes,28.6,207.0,136.0,104.0,Moderate,Moderate,Moderate,6.7,Havering,1
+20,Male,No,No,No,No,25.2,151.0,139.0,86.0,Low,Moderate,High,7.1,Lambeth,0
+28,Male,No,No,No,Yes,29.3,197.0,120.0,71.0,Moderate,None,Moderate,7.8,Lewisham,1
+34,Male,Yes,No,No,Yes,26.1,223.0,128.0,61.0,Low,Heavy,High,5.6,Lambeth,1
+82,Female,No,No,Yes,No,31.9,191.0,136.0,96.0,Moderate,Heavy,Moderate,7.7,Hackney,1
+45,Female,No,No,Yes,No,28.5,149.0,116.0,64.0,Moderate,Moderate,High,7.7,Kensington and Chelsea,1
+39,Female,Yes,No,No,No,24.3,197.0,172.0,76.0,Low,Moderate,Moderate,6.5,Tower Hamlets,1
+44,Female,No,No,No,No,26.0,225.0,90.0,110.0,Moderate,Moderate,Moderate,5.9,Barnet,1
+52,Male,No,No,No,No,25.7,173.0,146.0,60.0,Moderate,Light,Low,4.2,Islington,1
+82,Female,No,No,No,Yes,23.2,176.0,99.0,80.0,Low,Light,Moderate,7.3,Bexley,1
+58,Female,Yes,No,No,Yes,26.4,223.0,170.0,60.0,High,Light,Moderate,9.4,Westminster,1
+36,Male,Yes,No,No,No,25.1,156.0,158.0,72.0,Low,Heavy,Moderate,4.9,Haringey,1
+25,Female,No,Yes,Yes,No,23.8,159.0,123.0,87.0,Low,Moderate,Low,7.0,Kensington and Chelsea,1
+84,Male,Yes,No,No,No,23.4,249.0,131.0,100.0,Moderate,Light,Moderate,6.1,Hillingdon,1
+40,Female,No,Yes,No,No,25.3,227.0,163.0,117.0,Moderate,Light,Moderate,6.0,Kingston upon Thames,1
+74,Female,No,Yes,Yes,Yes,21.7,157.0,144.0,63.0,High,Moderate,Moderate,8.0,Greenwich,1
+75,Male,No,No,No,No,21.8,152.0,147.0,89.0,Moderate,Moderate,Moderate,6.3,Bexley,1
+64,Female,No,No,No,No,23.6,257.0,165.0,95.0,High,Moderate,Moderate,7.1,Hounslow,1
+49,Male,No,Yes,Yes,No,27.9,177.0,141.0,82.0,Moderate,Light,Moderate,4.6,Greenwich,1
+42,Female,No,No,Yes,No,26.7,158.0,144.0,94.0,Moderate,None,High,5.2,Greenwich,1
+32,Male,No,No,Yes,Yes,24.7,272.0,135.0,87.0,High,Light,Low,8.0,City of London,1
+51,Female,No,Yes,Yes,Yes,23.9,222.0,104.0,62.0,Low,Light,Low,8.6,Lewisham,1
+64,Male,No,No,No,No,32.5,120.0,126.0,60.0,Moderate,Light,High,4.0,City of London,1
+35,Female,No,Yes,No,No,27.0,187.0,152.0,85.0,Low,None,Low,7.2,Southwark,1
+46,Female,No,No,No,No,26.8,253.0,166.0,81.0,Moderate,Moderate,Low,6.6,Havering,1
+81,Female,No,No,No,No,27.7,188.0,142.0,95.0,Low,Light,High,4.8,Lewisham,1
+39,Female,Yes,No,Yes,No,30.2,225.0,144.0,60.0,High,Moderate,Moderate,8.8,Hillingdon,1
+68,Female,No,No,No,Yes,26.3,174.0,110.0,63.0,High,Light,Moderate,8.9,City of London,1
+22,Male,No,No,No,Yes,23.5,261.0,119.0,60.0,High,None,Moderate,5.3,Southwark,1
+83,Female,No,Yes,Yes,No,24.0,150.0,119.0,85.0,Moderate,Moderate,Moderate,8.0,Hounslow,1
+37,Male,No,Yes,No,No,22.1,162.0,137.0,79.0,Moderate,Light,Moderate,7.0,Harrow,1
+34,Female,No,No,No,No,26.5,162.0,131.0,86.0,Low,None,High,7.5,Tower Hamlets,0
+66,Female,No,No,No,No,21.6,134.0,113.0,70.0,Moderate,Moderate,Low,4.4,Havering,1
+41,Male,No,No,No,No,26.8,203.0,116.0,83.0,High,Light,Moderate,6.2,Harrow,1
+36,Female,No,No,No,No,32.0,250.0,154.0,95.0,Moderate,None,High,4.6,Newham,1
+76,Female,No,No,No,No,30.1,211.0,141.0,85.0,Low,None,Low,7.6,Camden,1
+47,Male,Yes,No,No,No,22.5,268.0,131.0,76.0,Moderate,Light,High,6.5,Westminster,1
+18,Female,No,No,No,No,28.9,164.0,158.0,90.0,Moderate,None,Moderate,8.0,Hammersmith and Fulham,0
+44,Female,No,Yes,Yes,No,22.5,194.0,136.0,83.0,High,None,Low,4.6,Croydon,1
+44,Female,No,No,No,Yes,26.1,197.0,161.0,99.0,Moderate,None,Low,8.2,Sutton,1
+57,Male,No,No,Yes,Yes,30.2,220.0,129.0,76.0,Moderate,Heavy,High,6.6,Newham,1
+67,Male,Yes,No,Yes,Yes,28.7,259.0,118.0,84.0,High,Light,High,7.7,Hammersmith and Fulham,1
+76,Male,Yes,Yes,No,No,29.7,172.0,137.0,60.0,Moderate,None,Moderate,8.5,Barnet,1
+23,Female,No,Yes,No,No,23.6,243.0,122.0,100.0,Moderate,Moderate,High,7.5,Lambeth,1
+57,Female,No,Yes,No,Yes,34.0,169.0,119.0,93.0,Moderate,Moderate,Moderate,6.4,Haringey,1
+21,Female,No,No,No,No,19.3,265.0,121.0,80.0,Moderate,Heavy,Moderate,6.0,Croydon,0
+20,Male,No,No,Yes,No,33.0,159.0,116.0,73.0,Moderate,Moderate,High,7.8,Islington,0
+84,Male,No,No,No,No,28.3,239.0,123.0,71.0,Low,Heavy,Moderate,5.4,Southwark,1
+73,Male,No,Yes,Yes,Yes,19.5,214.0,125.0,82.0,Low,Light,Low,7.2,Newham,1
+63,Female,No,No,No,No,21.4,145.0,144.0,80.0,Moderate,Moderate,Moderate,8.6,Islington,1
+52,Male,No,No,Yes,No,27.2,120.0,136.0,83.0,Moderate,Light,Moderate,6.2,Ealing,1
+47,Female,No,No,No,No,34.2,155.0,139.0,66.0,Moderate,Light,Low,7.8,Greenwich,1
+40,Female,No,No,No,No,32.4,181.0,132.0,97.0,Moderate,Light,High,6.0,Newham,1
+50,Male,Yes,No,No,No,22.0,129.0,141.0,85.0,High,Light,Low,7.5,Hackney,1
+53,Female,No,No,No,No,25.0,186.0,112.0,72.0,High,Moderate,Moderate,5.8,Kingston upon Thames,1
+32,Female,No,Yes,No,Yes,27.8,262.0,129.0,83.0,Low,Moderate,Low,7.8,Harrow,1
+84,Female,Yes,Yes,Yes,Yes,30.3,242.0,130.0,61.0,Moderate,Moderate,Low,8.5,Lewisham,1
+51,Male,No,Yes,No,Yes,25.8,277.0,128.0,91.0,Low,Moderate,Moderate,7.0,Hounslow,1
+30,Female,No,No,No,Yes,29.4,191.0,131.0,60.0,Moderate,None,Moderate,6.6,Camden,1
+34,Female,No,No,No,No,27.7,235.0,149.0,77.0,Moderate,None,Low,8.1,Sutton,1
+33,Female,No,No,Yes,Yes,31.0,205.0,137.0,85.0,Moderate,Heavy,Moderate,4.0,Greenwich,1
+46,Female,Yes,No,No,No,27.3,188.0,128.0,95.0,Moderate,Light,Moderate,6.7,Hillingdon,1
+35,Male,No,Yes,No,No,25.8,202.0,147.0,60.0,Moderate,Light,Moderate,6.1,Islington,1
+83,Male,No,No,No,Yes,27.2,200.0,129.0,71.0,Moderate,Light,Moderate,7.2,Brent,1
+57,Male,No,Yes,Yes,No,25.3,175.0,165.0,76.0,Moderate,Light,Moderate,8.9,Kensington and Chelsea,1
+47,Female,Yes,No,No,No,28.6,154.0,126.0,80.0,Moderate,Light,High,7.9,Barking and Dagenham,1
+65,Female,No,No,No,No,31.6,217.0,145.0,89.0,Low,Light,Moderate,5.3,Camden,1
+81,Female,No,No,No,Yes,22.8,260.0,105.0,100.0,Moderate,Heavy,Low,5.4,Newham,1
+33,Female,No,No,No,No,28.2,258.0,146.0,85.0,High,Light,Moderate,9.8,Camden,1
+59,Female,No,No,No,Yes,23.0,132.0,114.0,103.0,High,Light,High,5.1,Westminster,1
+76,Female,No,No,No,Yes,29.8,234.0,172.0,101.0,Low,Moderate,Low,6.8,Waltham Forest,1
+40,Female,No,Yes,No,Yes,30.4,224.0,149.0,64.0,Low,Moderate,Moderate,7.1,Richmond upon Thames,1
+78,Male,No,No,No,Yes,21.3,164.0,142.0,66.0,Moderate,Heavy,Moderate,7.7,Croydon,1
+39,Male,No,No,No,No,25.4,252.0,145.0,92.0,Moderate,Moderate,Low,6.4,Brent,1
+54,Male,Yes,Yes,Yes,Yes,24.7,220.0,119.0,81.0,Moderate,None,Moderate,5.1,Enfield,1
+73,Male,No,No,No,No,26.3,143.0,121.0,104.0,Moderate,Light,Low,6.0,Islington,1
+25,Male,No,No,No,No,27.9,139.0,145.0,89.0,Moderate,Light,Low,5.5,Barking and Dagenham,0
+76,Female,No,No,No,No,24.8,244.0,109.0,97.0,Low,Light,Moderate,7.1,Redbridge,1
+75,Female,No,Yes,No,No,34.0,241.0,135.0,96.0,High,Heavy,Moderate,7.2,Waltham Forest,1
+36,Female,No,Yes,Yes,No,33.1,180.0,103.0,72.0,Low,Moderate,Moderate,8.1,Sutton,1
+72,Female,No,No,No,No,32.1,254.0,90.0,60.0,Low,Light,High,8.7,Bromley,1
+59,Female,No,Yes,No,Yes,28.8,264.0,129.0,70.0,Moderate,Light,Low,8.8,Tower Hamlets,1
+38,Female,No,No,No,No,23.9,206.0,134.0,81.0,Low,None,Low,7.1,Richmond upon Thames,1
+82,Male,No,No,No,No,30.9,267.0,141.0,67.0,Moderate,Light,High,10.0,Brent,1
+63,Female,No,No,No,No,28.1,253.0,147.0,87.0,High,None,Low,5.5,Newham,1
+30,Female,No,No,No,No,27.0,154.0,138.0,77.0,High,Light,Low,9.6,Ealing,1
+57,Female,No,No,Yes,Yes,32.5,230.0,134.0,91.0,Low,None,Moderate,8.2,Barnet,1
+24,Male,No,No,No,No,27.8,200.0,110.0,102.0,Moderate,None,Moderate,7.4,Wandsworth,0
+52,Female,No,No,Yes,No,23.6,175.0,147.0,104.0,Moderate,Light,High,7.9,Lambeth,1
+37,Male,No,No,No,No,22.7,123.0,163.0,65.0,Low,Heavy,High,6.5,Harrow,1
+28,Male,No,No,No,No,24.4,255.0,128.0,61.0,High,Light,High,6.8,Kingston upon Thames,0
+20,Male,No,No,No,Yes,24.4,181.0,105.0,89.0,High,Light,Low,4.9,Hackney,0
+30,Female,No,No,No,No,24.5,213.0,148.0,74.0,Moderate,Light,Moderate,4.1,Camden,0
+63,Female,Yes,Yes,Yes,No,24.6,212.0,134.0,120.0,Moderate,None,Low,7.5,Richmond upon Thames,1
+77,Female,Yes,Yes,Yes,No,22.6,199.0,92.0,74.0,Moderate,Moderate,Moderate,5.2,Richmond upon Thames,1
+30,Female,Yes,No,No,No,28.5,120.0,133.0,64.0,Moderate,Light,Moderate,7.0,Hounslow,1
+80,Male,No,No,No,No,33.4,223.0,114.0,85.0,Moderate,Moderate,Low,6.5,Tower Hamlets,1
+56,Male,No,No,No,No,32.3,189.0,125.0,76.0,Low,None,Moderate,9.9,City of London,1
+31,Female,Yes,No,No,No,21.1,226.0,90.0,93.0,Moderate,Light,High,5.7,Islington,1
+55,Male,No,No,Yes,Yes,25.1,209.0,129.0,98.0,Moderate,Moderate,Moderate,8.3,Southwark,1
+55,Female,Yes,No,No,No,26.3,218.0,123.0,65.0,Low,None,High,6.2,Kingston upon Thames,1
+76,Female,No,Yes,Yes,Yes,31.0,165.0,93.0,93.0,Moderate,Heavy,Low,7.2,Barnet,1
+39,Male,No,No,No,No,28.7,255.0,118.0,82.0,High,Light,Moderate,5.0,Camden,1
+53,Female,No,Yes,Yes,No,18.0,177.0,129.0,66.0,Moderate,Heavy,High,5.6,Camden,1
+76,Male,No,Yes,No,No,29.0,240.0,157.0,89.0,Moderate,None,Low,9.8,Richmond upon Thames,1
+30,Female,No,No,No,No,23.9,256.0,122.0,86.0,Moderate,Light,Low,7.2,Lewisham,0
+32,Male,Yes,No,No,No,26.1,235.0,117.0,80.0,Low,None,Moderate,7.1,Tower Hamlets,1
+69,Male,Yes,Yes,Yes,Yes,28.6,230.0,117.0,63.0,Moderate,Light,Moderate,9.3,Richmond upon Thames,1
+74,Male,No,Yes,Yes,No,29.5,262.0,168.0,93.0,Moderate,Heavy,Moderate,7.4,Enfield,1
+57,Female,Yes,No,No,Yes,25.3,227.0,132.0,99.0,Low,Heavy,Moderate,5.9,Camden,1
+28,Female,Yes,No,No,No,22.0,151.0,154.0,106.0,Low,Light,Moderate,5.4,Kingston upon Thames,1
+45,Female,No,No,No,No,27.3,221.0,111.0,65.0,Low,None,Moderate,8.5,Ealing,1
+77,Male,No,No,Yes,No,23.6,191.0,97.0,74.0,Moderate,None,Moderate,8.5,Hounslow,1
+80,Female,No,Yes,No,Yes,20.4,191.0,120.0,70.0,Low,Light,Moderate,5.5,Sutton,1
+31,Female,No,No,No,No,29.4,196.0,104.0,93.0,Moderate,Light,Moderate,6.2,Bexley,0
+84,Female,No,No,No,Yes,22.2,270.0,149.0,76.0,Low,Light,Low,8.7,Hounslow,1
+18,Female,No,No,No,Yes,32.7,183.0,133.0,89.0,High,Light,Moderate,7.3,Brent,0
+79,Male,No,No,No,No,21.9,198.0,136.0,82.0,Moderate,Heavy,Moderate,7.6,Redbridge,1
+42,Female,No,No,No,No,29.6,204.0,155.0,67.0,Moderate,None,Moderate,7.8,Sutton,1
+40,Female,No,Yes,No,No,23.0,266.0,143.0,81.0,High,Light,Moderate,6.7,Lambeth,1
+81,Female,No,Yes,No,Yes,26.7,164.0,109.0,79.0,Moderate,None,Moderate,7.2,Ealing,1
+82,Male,No,No,No,No,29.5,261.0,123.0,87.0,Moderate,Light,Low,7.4,Wandsworth,1
+80,Male,No,Yes,Yes,No,19.7,215.0,157.0,75.0,Moderate,Moderate,Low,6.1,Barking and Dagenham,1
+48,Male,No,Yes,Yes,No,26.5,188.0,100.0,76.0,Moderate,Light,Moderate,4.9,Richmond upon Thames,1
+80,Male,Yes,No,No,No,28.6,212.0,125.0,82.0,High,None,Moderate,7.2,Merton,1
+79,Female,Yes,No,No,No,23.7,242.0,100.0,60.0,Low,Light,Moderate,6.3,City of London,1
+78,Male,No,Yes,No,Yes,32.0,217.0,116.0,93.0,Moderate,Light,Low,6.2,Waltham Forest,1
+40,Male,Yes,No,No,Yes,24.0,201.0,90.0,70.0,Moderate,Heavy,Moderate,7.7,Haringey,1
+35,Female,No,No,No,No,28.2,192.0,121.0,88.0,Low,Light,High,7.1,Kensington and Chelsea,0
+80,Male,No,No,No,Yes,26.7,219.0,126.0,71.0,High,Light,High,4.0,Hammersmith and Fulham,1
+65,Female,No,No,No,No,25.5,188.0,148.0,78.0,Low,None,Low,6.9,Harrow,1
+53,Female,No,No,No,No,32.9,166.0,119.0,83.0,Moderate,Light,Moderate,5.2,Camden,1
+76,Female,No,No,Yes,Yes,24.2,178.0,167.0,82.0,High,Moderate,Moderate,6.6,Brent,1
+32,Male,No,No,No,No,27.4,190.0,157.0,101.0,Moderate,Light,Moderate,9.2,Redbridge,1
+35,Male,No,No,No,No,21.3,120.0,136.0,91.0,Moderate,None,Moderate,6.4,Hammersmith and Fulham,1
+40,Female,No,No,No,No,18.0,201.0,136.0,60.0,High,None,Moderate,7.7,Kensington and Chelsea,1
+23,Female,No,No,No,No,25.1,197.0,160.0,70.0,High,None,Low,9.0,Bexley,0
+52,Male,No,Yes,No,No,25.5,223.0,116.0,93.0,High,Light,High,9.5,Haringey,1
+35,Female,No,Yes,No,No,27.8,154.0,116.0,65.0,Moderate,Light,Low,4.0,Ealing,1
+45,Female,No,No,No,Yes,26.7,158.0,158.0,76.0,Moderate,Heavy,Moderate,8.4,Hounslow,1
+58,Male,No,No,No,No,23.7,191.0,143.0,72.0,Moderate,None,Moderate,6.8,Wandsworth,1
+81,Male,No,No,Yes,No,22.1,161.0,122.0,60.0,Moderate,Moderate,Moderate,6.0,Enfield,1
+65,Male,No,Yes,No,Yes,22.1,256.0,128.0,80.0,High,None,Low,7.1,Wandsworth,1
+24,Male,No,No,No,No,26.2,156.0,107.0,75.0,High,Light,Low,6.0,Greenwich,0
+53,Male,Yes,No,Yes,No,25.6,164.0,147.0,74.0,High,Heavy,High,4.0,Sutton,1
+84,Female,No,No,No,No,33.7,194.0,101.0,84.0,Moderate,Moderate,Moderate,6.0,Sutton,1
+72,Male,No,No,No,No,25.3,193.0,114.0,60.0,Moderate,None,High,9.5,Newham,1
+71,Male,No,Yes,No,No,25.6,183.0,111.0,89.0,Moderate,None,Low,5.0,Hackney,1
+39,Male,Yes,No,Yes,No,20.9,156.0,147.0,85.0,High,Light,High,6.3,Tower Hamlets,1
+49,Female,No,Yes,No,No,24.5,247.0,140.0,70.0,Moderate,Light,Low,9.1,Lewisham,1
+61,Male,No,No,No,Yes,29.6,273.0,122.0,91.0,Moderate,Light,Low,10.4,Lambeth,1
+27,Female,No,No,No,No,18.7,169.0,153.0,83.0,Moderate,Heavy,Moderate,8.4,Ealing,1
+21,Female,No,No,No,No,28.2,297.0,126.0,60.0,Moderate,Heavy,High,4.9,Barnet,1
+64,Female,No,No,No,Yes,28.7,171.0,142.0,74.0,Moderate,Light,Low,6.3,Hillingdon,1
+44,Female,No,No,No,No,32.7,261.0,145.0,107.0,High,Light,Low,4.5,Hounslow,1
+42,Male,Yes,No,No,No,25.9,185.0,127.0,86.0,Moderate,None,Moderate,8.9,Kensington and Chelsea,1
+64,Male,No,Yes,No,No,30.3,213.0,124.0,60.0,Low,Moderate,Low,6.7,Enfield,1
+27,Female,No,No,No,No,25.3,187.0,132.0,76.0,High,Light,High,9.2,Barking and Dagenham,0
+41,Male,No,Yes,No,No,35.2,195.0,122.0,99.0,Moderate,None,High,7.6,Brent,1
+41,Male,No,No,No,Yes,28.9,120.0,138.0,85.0,Moderate,Moderate,Low,7.2,Barnet,1
+62,Male,No,No,No,No,26.9,126.0,142.0,84.0,Moderate,Light,Low,8.0,Bromley,1
+53,Male,No,No,No,No,31.2,274.0,147.0,68.0,Moderate,None,Low,5.8,Islington,1
+29,Male,No,No,No,No,30.7,150.0,91.0,91.0,Low,None,Moderate,5.9,Newham,1
+60,Female,Yes,No,No,Yes,20.8,170.0,130.0,75.0,Moderate,Moderate,Moderate,7.9,Bexley,1
+42,Female,No,No,No,Yes,32.2,157.0,121.0,60.0,Low,None,Moderate,5.8,Westminster,1
+33,Female,No,No,No,No,23.8,241.0,114.0,60.0,High,Moderate,High,8.8,Hammersmith and Fulham,1
+46,Male,No,Yes,No,No,22.1,257.0,147.0,98.0,Low,Light,Moderate,7.3,Havering,1
+37,Female,No,No,No,No,28.1,214.0,165.0,80.0,High,None,Moderate,5.2,Hounslow,1
+77,Female,No,No,No,No,23.0,242.0,159.0,79.0,Moderate,Moderate,Low,5.9,Barnet,1
+59,Male,Yes,Yes,No,No,18.8,208.0,109.0,66.0,Low,Moderate,Moderate,8.0,Haringey,1
+56,Male,No,No,No,Yes,25.9,218.0,138.0,77.0,Low,Moderate,Moderate,4.4,Redbridge,1
+23,Female,No,No,No,No,22.6,157.0,147.0,84.0,High,None,Moderate,7.5,Havering,0
+64,Female,No,No,Yes,No,31.6,146.0,103.0,78.0,Moderate,None,Moderate,7.8,Kensington and Chelsea,1
+60,Female,No,No,No,Yes,26.2,228.0,136.0,83.0,Moderate,Moderate,High,7.9,Camden,1
+24,Female,Yes,No,No,No,18.0,153.0,134.0,65.0,High,Moderate,Low,6.9,Enfield,0
+71,Male,No,Yes,No,Yes,22.8,197.0,110.0,80.0,Low,Heavy,Low,6.8,Westminster,1
+68,Male,No,No,No,No,22.8,289.0,111.0,60.0,Low,None,High,9.4,Hammersmith and Fulham,1
+58,Male,No,No,No,No,23.7,169.0,110.0,81.0,High,Light,Moderate,6.4,Brent,1
+70,Female,Yes,Yes,No,No,25.2,203.0,160.0,94.0,High,Light,High,5.8,Camden,1
+25,Female,No,No,No,Yes,30.4,177.0,114.0,81.0,Moderate,None,Low,8.3,Camden,1
+35,Male,Yes,Yes,No,Yes,30.2,207.0,157.0,60.0,Low,Light,Moderate,4.0,Southwark,1
+65,Female,No,No,No,No,30.8,213.0,129.0,68.0,Low,Light,Low,8.6,City of London,1
+35,Male,Yes,Yes,No,No,22.1,176.0,107.0,98.0,Moderate,Moderate,Moderate,9.3,Haringey,1
+41,Female,No,No,No,No,27.7,120.0,144.0,82.0,High,None,High,6.7,Kingston upon Thames,1
+29,Male,No,No,No,Yes,23.6,234.0,127.0,64.0,Moderate,None,Low,5.1,Ealing,1
+71,Male,No,No,No,No,25.1,189.0,162.0,76.0,Moderate,Light,Moderate,6.6,Hillingdon,1
+39,Female,No,No,No,No,18.0,140.0,128.0,82.0,Moderate,None,High,6.6,Merton,1
+66,Male,No,Yes,No,No,20.8,212.0,133.0,71.0,Moderate,None,Moderate,7.2,Barking and Dagenham,1
+56,Male,Yes,No,No,No,31.7,142.0,113.0,92.0,Moderate,Heavy,Moderate,4.5,Hillingdon,1
+55,Female,No,Yes,No,No,18.0,282.0,152.0,74.0,High,None,Moderate,7.0,Kensington and Chelsea,1
+84,Male,No,No,No,No,26.5,171.0,150.0,83.0,Moderate,Heavy,Moderate,7.8,Brent,1
+32,Female,No,Yes,No,No,28.4,221.0,131.0,94.0,Low,None,Low,4.1,Haringey,1
+73,Male,No,No,No,No,28.9,197.0,146.0,97.0,Low,None,High,8.7,Hillingdon,1
+42,Female,No,No,No,No,24.7,160.0,114.0,82.0,High,Moderate,Low,5.3,Wandsworth,1
+26,Female,No,No,No,No,24.6,197.0,110.0,72.0,Moderate,Light,Moderate,9.3,City of London,0
+65,Female,No,Yes,No,No,25.9,159.0,105.0,88.0,Low,None,Moderate,5.6,Lambeth,1
+64,Male,No,No,No,No,22.4,148.0,140.0,75.0,Low,Moderate,Moderate,6.3,City of London,1
+82,Male,Yes,Yes,No,No,27.3,198.0,140.0,72.0,High,None,High,8.8,Sutton,1
+77,Female,No,No,No,Yes,30.8,211.0,137.0,84.0,Low,Moderate,Low,7.2,Camden,1
+57,Male,No,No,No,No,18.0,244.0,133.0,80.0,Moderate,Moderate,Low,7.6,Havering,1
+77,Female,Yes,No,Yes,No,28.0,265.0,109.0,77.0,High,None,Low,4.4,Barnet,1
+81,Male,No,No,No,No,29.7,242.0,143.0,82.0,Low,Light,Low,5.1,Tower Hamlets,1
+38,Male,No,No,No,No,36.3,146.0,102.0,85.0,Moderate,Light,Moderate,8.8,Brent,1
+23,Female,No,No,No,No,30.7,167.0,104.0,74.0,High,None,Low,5.4,Richmond upon Thames,0
+66,Female,Yes,No,No,No,24.4,176.0,166.0,60.0,Moderate,Moderate,Moderate,4.2,Bexley,1
+58,Male,No,Yes,Yes,No,18.6,199.0,143.0,82.0,Low,Light,High,6.8,Sutton,1
+41,Male,Yes,Yes,No,No,22.4,187.0,145.0,60.0,Low,Moderate,Moderate,6.9,Kingston upon Thames,1
+33,Male,No,Yes,No,Yes,31.0,216.0,161.0,73.0,High,Light,Low,7.2,Greenwich,1
+36,Male,No,No,No,No,24.5,184.0,120.0,99.0,High,Light,Low,10.0,Greenwich,0
+38,Female,No,Yes,No,No,33.7,151.0,131.0,61.0,High,Moderate,Low,6.0,Westminster,1
+32,Female,No,Yes,No,No,30.0,188.0,108.0,65.0,High,Light,Moderate,5.7,Greenwich,1
+69,Male,No,No,No,No,30.0,250.0,134.0,82.0,Moderate,Light,Moderate,5.7,Richmond upon Thames,1
+25,Female,No,Yes,No,No,20.4,243.0,94.0,64.0,Moderate,Light,Moderate,10.0,Kingston upon Thames,0
+77,Male,No,No,No,No,28.2,208.0,150.0,69.0,Low,Light,Low,8.1,Harrow,1
+67,Male,Yes,No,No,Yes,24.4,194.0,169.0,64.0,Low,Moderate,High,5.8,Hackney,1
+81,Female,Yes,No,No,No,21.0,267.0,130.0,77.0,Moderate,Moderate,Moderate,7.7,Camden,1
+72,Male,No,No,No,Yes,23.8,216.0,155.0,101.0,High,Moderate,High,6.6,Waltham Forest,1
+68,Female,No,Yes,No,Yes,22.8,155.0,135.0,83.0,Moderate,Moderate,Moderate,8.2,Wandsworth,1
+44,Male,No,No,No,Yes,23.2,235.0,121.0,93.0,Low,Light,Moderate,7.2,Harrow,1
+43,Female,No,No,Yes,No,22.8,158.0,130.0,78.0,Moderate,None,High,7.4,Hounslow,1
+76,Female,No,No,No,Yes,29.3,183.0,138.0,69.0,Moderate,Light,Moderate,8.3,Westminster,1
+52,Male,No,No,No,No,25.7,203.0,131.0,78.0,Low,Light,High,8.8,Lambeth,1
+61,Female,No,Yes,No,Yes,28.0,181.0,152.0,101.0,Moderate,Light,Moderate,9.2,Newham,1
+76,Male,No,No,No,No,22.6,292.0,138.0,86.0,Low,Moderate,Low,6.1,Hammersmith and Fulham,1
+31,Male,No,No,No,No,30.9,242.0,147.0,75.0,Moderate,Heavy,Moderate,6.1,Southwark,1
+67,Female,No,Yes,No,No,21.7,152.0,126.0,71.0,Low,Moderate,Low,6.4,City of London,1
+20,Male,No,No,No,No,29.8,214.0,128.0,82.0,Moderate,None,Moderate,5.1,Enfield,0
+48,Female,No,Yes,No,No,25.1,161.0,127.0,70.0,Low,Moderate,Low,4.0,Kensington and Chelsea,1
+73,Male,No,No,No,No,18.0,285.0,155.0,75.0,Moderate,Heavy,Low,5.7,Hackney,1
+75,Male,No,No,Yes,No,30.9,232.0,147.0,73.0,Low,Light,Moderate,8.7,Greenwich,1
+59,Female,No,No,No,No,23.1,221.0,136.0,83.0,Low,Heavy,Moderate,5.5,Wandsworth,1
+21,Female,No,Yes,Yes,No,25.7,198.0,147.0,95.0,Low,None,Moderate,8.2,Barnet,0
+77,Male,No,No,No,Yes,25.6,182.0,119.0,96.0,Low,Moderate,Low,9.9,Westminster,1
+59,Male,No,No,No,No,27.2,217.0,128.0,81.0,Moderate,Light,Low,6.2,City of London,1
+35,Female,Yes,No,No,No,27.0,135.0,136.0,72.0,Moderate,Light,Moderate,4.9,Newham,1
+68,Female,No,No,Yes,No,20.6,206.0,116.0,78.0,High,Moderate,Low,6.1,Havering,1
+39,Male,No,No,No,No,27.1,268.0,121.0,94.0,Moderate,None,Low,8.7,Ealing,1
+73,Female,No,No,No,Yes,27.3,165.0,134.0,100.0,Low,Heavy,Moderate,7.9,Bromley,1
+78,Male,No,No,No,No,20.1,196.0,123.0,80.0,Low,Light,Low,7.1,Bexley,1
+51,Male,No,No,No,No,20.4,136.0,106.0,82.0,Moderate,Moderate,Moderate,5.7,Barking and Dagenham,1
+29,Male,No,No,Yes,No,28.6,232.0,110.0,86.0,High,None,Moderate,5.7,Barnet,1
+35,Male,No,Yes,No,No,23.5,178.0,148.0,96.0,Moderate,Light,Moderate,7.1,Harrow,1
+55,Male,No,Yes,No,No,31.3,177.0,154.0,60.0,Low,Moderate,Moderate,6.4,Kingston upon Thames,1
+58,Male,No,No,Yes,No,32.7,208.0,141.0,93.0,Low,Light,Moderate,9.8,Kensington and Chelsea,1
+23,Male,No,Yes,No,No,22.1,184.0,155.0,86.0,High,Moderate,Low,5.5,Southwark,0
+80,Female,No,Yes,No,No,29.1,277.0,133.0,90.0,Moderate,Moderate,Moderate,9.4,Hammersmith and Fulham,1
+45,Male,No,Yes,No,No,25.4,143.0,120.0,87.0,Low,Moderate,High,8.9,Kingston upon Thames,1
+39,Female,No,No,No,No,26.5,170.0,139.0,91.0,High,Moderate,High,5.9,Redbridge,1
+58,Male,No,Yes,No,No,23.9,189.0,109.0,79.0,Low,None,High,7.7,Merton,1
+67,Female,No,Yes,Yes,Yes,27.3,266.0,133.0,95.0,High,Moderate,Low,4.9,Hounslow,1
+62,Male,Yes,No,No,Yes,21.6,141.0,115.0,98.0,Moderate,Heavy,High,8.4,Sutton,1
+26,Male,No,Yes,No,No,26.0,120.0,138.0,75.0,Low,None,Low,7.0,Camden,0
+43,Female,No,No,No,Yes,27.2,196.0,118.0,60.0,Moderate,Light,Low,8.0,City of London,1
+34,Male,No,Yes,No,No,23.6,130.0,152.0,66.0,Moderate,None,High,7.8,Greenwich,1
+69,Male,No,No,Yes,Yes,27.8,253.0,141.0,60.0,Moderate,Moderate,Moderate,6.4,Newham,1
+33,Male,No,No,No,No,32.5,187.0,157.0,60.0,High,Light,Low,7.9,Enfield,1
+60,Male,No,Yes,No,Yes,26.9,163.0,121.0,80.0,Low,None,High,5.7,Hammersmith and Fulham,1
+43,Female,No,No,No,No,25.7,222.0,149.0,79.0,High,Light,Low,9.8,Lambeth,1
+43,Female,No,No,Yes,Yes,18.0,217.0,102.0,62.0,Moderate,Moderate,Low,5.5,Redbridge,1
+19,Male,No,No,No,No,27.9,171.0,160.0,90.0,High,Light,Moderate,4.2,Merton,0
+23,Male,No,No,No,No,20.7,200.0,99.0,95.0,High,Moderate,Low,7.4,Redbridge,0
+36,Male,Yes,Yes,No,No,29.4,185.0,132.0,78.0,High,Light,Moderate,6.5,Richmond upon Thames,1
+81,Male,No,No,No,No,28.2,229.0,123.0,84.0,Low,None,High,6.4,Hackney,1
+43,Male,No,No,No,No,25.6,190.0,152.0,83.0,Moderate,Light,High,5.9,City of London,1
+31,Female,No,No,No,No,29.6,157.0,156.0,82.0,Moderate,Light,Moderate,7.2,Barking and Dagenham,1
+18,Male,No,No,No,No,34.1,252.0,122.0,63.0,Low,Moderate,Moderate,7.5,Harrow,0
+36,Female,Yes,Yes,No,No,26.3,205.0,105.0,86.0,Low,Moderate,High,8.7,Sutton,1
+29,Female,No,No,No,No,38.6,155.0,135.0,60.0,High,Moderate,Moderate,7.8,Lewisham,1
+25,Female,Yes,No,No,No,23.8,253.0,153.0,80.0,Low,Light,High,8.1,Wandsworth,1
+67,Female,No,No,Yes,No,19.9,168.0,145.0,88.0,Moderate,Moderate,Low,6.4,Tower Hamlets,1
+79,Female,No,No,Yes,Yes,26.1,189.0,128.0,106.0,Low,None,Moderate,10.6,Newham,1
+56,Female,No,Yes,No,No,18.0,175.0,120.0,89.0,Moderate,Light,Low,7.0,Hammersmith and Fulham,1
+69,Male,No,No,No,No,26.7,198.0,159.0,77.0,Moderate,Light,Moderate,4.8,Lambeth,1
+48,Female,No,No,No,No,25.7,177.0,120.0,90.0,Moderate,Moderate,Moderate,6.2,Hounslow,1
+52,Female,Yes,No,No,Yes,24.5,236.0,104.0,100.0,Low,Moderate,Moderate,8.3,Bexley,1
+70,Female,No,No,No,Yes,26.9,187.0,136.0,95.0,Moderate,Moderate,Moderate,5.4,Richmond upon Thames,1
+36,Female,Yes,No,No,No,21.4,240.0,117.0,68.0,High,Moderate,Low,5.6,City of London,1
+35,Male,No,No,No,No,26.8,231.0,98.0,84.0,High,Moderate,High,8.4,Greenwich,1
+75,Male,No,No,No,No,22.2,201.0,157.0,60.0,Low,Moderate,Low,7.4,Sutton,1
+43,Male,No,No,No,Yes,24.3,238.0,121.0,86.0,Moderate,Light,Moderate,4.9,Croydon,1
+69,Male,No,No,No,No,22.2,213.0,110.0,71.0,Low,Light,Moderate,7.3,Redbridge,1
+49,Male,No,Yes,No,Yes,29.6,141.0,122.0,64.0,High,Moderate,Moderate,8.0,Bromley,1
+78,Female,No,No,No,No,25.6,190.0,107.0,78.0,Moderate,Moderate,Moderate,6.6,Richmond upon Thames,1
+78,Male,No,No,Yes,Yes,23.7,240.0,90.0,82.0,Moderate,Heavy,High,9.0,City of London,1
+75,Male,No,Yes,No,Yes,28.2,193.0,112.0,62.0,Low,Moderate,Moderate,8.5,City of London,1
+68,Female,No,No,No,No,28.4,176.0,127.0,81.0,Low,None,Low,4.7,Lewisham,1
+29,Female,No,No,Yes,No,25.5,185.0,101.0,72.0,Moderate,Moderate,High,9.2,Redbridge,1
+70,Female,Yes,No,Yes,No,23.3,156.0,118.0,101.0,High,Moderate,Low,5.4,Hounslow,1
+45,Male,No,No,No,No,25.0,124.0,121.0,64.0,Low,Moderate,High,6.1,Redbridge,1
+52,Female,No,No,Yes,No,33.2,232.0,143.0,60.0,Moderate,Light,Low,7.2,Ealing,1
+48,Male,No,No,No,No,22.7,244.0,153.0,81.0,Moderate,Light,Moderate,4.0,Barnet,1
+74,Female,No,Yes,No,No,27.5,212.0,100.0,60.0,Moderate,Moderate,Moderate,7.6,Barking and Dagenham,1
+66,Female,No,No,Yes,No,28.5,215.0,119.0,73.0,Low,Light,High,5.7,Hammersmith and Fulham,1
+34,Female,No,No,No,Yes,30.6,196.0,111.0,71.0,High,Moderate,Moderate,6.4,Bexley,1
+69,Male,No,Yes,Yes,No,30.6,182.0,130.0,77.0,Low,Moderate,Moderate,6.4,Bromley,1
+27,Female,No,Yes,No,No,22.9,149.0,134.0,108.0,Low,Moderate,High,8.9,Southwark,1
+66,Female,No,No,No,No,25.6,156.0,104.0,109.0,Moderate,Light,Moderate,6.8,Enfield,1
+66,Female,Yes,Yes,Yes,Yes,29.6,201.0,129.0,102.0,High,Moderate,High,8.5,Harrow,1
+22,Female,No,No,No,No,27.0,156.0,110.0,65.0,Moderate,None,Moderate,7.2,Bromley,0
+57,Male,No,No,No,No,25.2,153.0,96.0,81.0,Low,Light,Low,6.1,Barking and Dagenham,1
+73,Female,No,No,Yes,No,29.2,126.0,131.0,88.0,Low,Moderate,Moderate,9.8,Sutton,1
+34,Male,No,No,No,No,27.7,187.0,128.0,78.0,High,Moderate,Moderate,6.5,Hillingdon,0
+59,Male,No,Yes,No,No,31.1,176.0,122.0,63.0,Moderate,Light,Moderate,5.7,Redbridge,1
+32,Male,No,Yes,Yes,No,25.8,193.0,159.0,81.0,Moderate,Light,Moderate,8.9,Hammersmith and Fulham,1
+66,Female,Yes,No,No,Yes,22.7,231.0,124.0,75.0,Low,Light,High,7.1,Tower Hamlets,1
+63,Male,No,No,No,Yes,26.9,182.0,147.0,85.0,Moderate,Light,Low,6.5,Hounslow,1
+51,Male,Yes,Yes,No,No,23.0,190.0,90.0,66.0,Moderate,Light,Moderate,6.4,City of London,1
+68,Female,No,No,No,No,29.0,188.0,129.0,87.0,High,Moderate,High,7.4,Hackney,1
+39,Male,No,No,No,No,23.7,186.0,123.0,76.0,Low,Light,Low,6.6,Harrow,1
+24,Male,Yes,Yes,No,No,25.6,120.0,110.0,71.0,Moderate,Light,Low,5.0,City of London,0
+34,Female,No,No,No,No,29.1,156.0,145.0,103.0,Moderate,Moderate,Low,7.4,Enfield,1
+62,Female,No,No,Yes,No,22.7,227.0,127.0,98.0,Low,Moderate,Moderate,6.3,Wandsworth,1
+68,Female,No,No,Yes,No,30.8,139.0,109.0,82.0,Low,None,Low,5.5,Merton,1
+23,Female,No,No,No,No,29.2,237.0,130.0,76.0,High,Light,Low,6.7,Redbridge,0
+57,Male,No,No,No,No,22.5,254.0,120.0,60.0,High,None,Moderate,7.3,Hillingdon,1
+30,Female,No,No,No,No,31.6,158.0,122.0,77.0,High,Heavy,Low,4.4,Islington,0
+60,Male,No,No,No,No,25.3,243.0,153.0,117.0,Low,None,Moderate,4.0,Camden,1
+62,Male,Yes,No,No,Yes,33.2,206.0,134.0,61.0,Moderate,Light,Low,6.3,Islington,1
+48,Female,Yes,No,No,No,25.8,137.0,111.0,72.0,High,Light,Moderate,4.0,Kingston upon Thames,1
+67,Female,Yes,No,No,No,33.8,123.0,122.0,60.0,High,Heavy,Low,6.2,Bromley,1
+55,Female,Yes,Yes,No,No,28.4,227.0,136.0,68.0,Moderate,Light,High,7.4,Camden,1
+69,Female,No,Yes,Yes,No,29.2,175.0,144.0,72.0,Low,Light,Low,4.2,Southwark,1
+59,Male,Yes,No,No,No,24.9,192.0,123.0,119.0,Moderate,Light,High,10.1,Westminster,1
+76,Male,No,No,No,No,25.5,234.0,138.0,71.0,Low,Moderate,Low,4.9,City of London,1
+44,Male,No,No,No,No,24.8,141.0,153.0,74.0,High,Moderate,Moderate,6.9,Bexley,1
+65,Female,No,Yes,No,No,27.3,179.0,147.0,60.0,High,Moderate,Moderate,5.6,Southwark,1
+28,Female,No,Yes,No,No,29.1,220.0,157.0,100.0,High,Heavy,Moderate,7.5,Greenwich,1
+18,Male,No,Yes,No,No,25.5,234.0,128.0,74.0,Moderate,None,High,7.8,Ealing,0
+81,Male,No,Yes,Yes,No,27.1,210.0,160.0,77.0,Low,Moderate,Low,8.0,Bexley,1
+66,Female,Yes,No,No,No,28.3,229.0,109.0,97.0,Moderate,Moderate,High,6.8,Richmond upon Thames,1
+32,Male,No,No,No,No,24.7,204.0,150.0,84.0,Low,Moderate,Moderate,6.8,Kensington and Chelsea,1
+72,Female,No,Yes,No,Yes,30.4,199.0,130.0,106.0,Moderate,None,Low,5.4,Kingston upon Thames,1
+28,Female,No,No,Yes,No,23.1,120.0,106.0,99.0,Moderate,Moderate,Moderate,8.1,Lewisham,0
+81,Male,Yes,No,No,Yes,26.5,272.0,162.0,100.0,Low,None,Low,10.8,Bexley,1
+43,Male,No,No,No,No,29.3,237.0,125.0,84.0,High,None,High,7.9,Lewisham,1
+58,Female,No,Yes,No,Yes,26.4,176.0,119.0,95.0,Low,Light,Moderate,8.6,Bromley,1
+46,Male,No,No,No,No,29.0,256.0,161.0,88.0,Moderate,Light,Moderate,5.4,Haringey,1
+53,Male,Yes,No,No,No,29.9,156.0,151.0,68.0,Moderate,None,Moderate,6.0,Bromley,1
+59,Female,No,Yes,Yes,No,27.3,251.0,156.0,88.0,High,None,Low,8.3,Hillingdon,1
+39,Male,No,No,No,No,28.6,218.0,148.0,60.0,High,Light,Moderate,7.3,Newham,1
+20,Male,Yes,No,No,No,22.6,222.0,129.0,60.0,Low,Heavy,Moderate,7.6,Newham,0
+45,Male,No,Yes,No,No,23.3,174.0,114.0,93.0,Moderate,Light,Low,7.3,Hounslow,1
+28,Male,No,No,No,No,25.9,251.0,97.0,76.0,Low,Light,Moderate,6.7,Camden,0
+65,Male,Yes,No,No,No,28.8,211.0,143.0,79.0,Moderate,Moderate,Moderate,5.2,Richmond upon Thames,1
+73,Female,No,No,No,Yes,29.3,126.0,178.0,120.0,High,Light,Low,6.7,Lambeth,1
+70,Male,No,No,No,No,22.6,204.0,117.0,73.0,Low,Moderate,High,6.5,Hammersmith and Fulham,1
+83,Female,No,Yes,No,No,30.7,246.0,102.0,91.0,High,Light,Moderate,6.9,Richmond upon Thames,1
+77,Female,No,No,No,Yes,30.9,210.0,152.0,98.0,High,Moderate,High,5.4,Bromley,1
+19,Female,No,No,No,No,26.9,188.0,126.0,91.0,Moderate,None,Low,5.4,Islington,0
+29,Male,No,No,No,No,30.3,169.0,133.0,78.0,Low,None,Low,5.7,Kensington and Chelsea,1
+35,Male,No,Yes,No,No,27.6,191.0,158.0,93.0,High,Light,Low,8.3,Newham,1
+46,Female,No,No,Yes,No,21.3,242.0,112.0,79.0,High,Moderate,Low,8.2,Croydon,1
+37,Female,No,No,No,No,23.3,166.0,134.0,81.0,Low,Light,Moderate,7.0,Barnet,1
+22,Female,No,Yes,No,Yes,23.6,188.0,146.0,71.0,Low,Light,High,5.9,Hillingdon,1
+43,Female,No,No,Yes,No,20.2,128.0,167.0,82.0,Low,Moderate,High,7.6,Harrow,1
+48,Female,Yes,No,No,Yes,28.9,205.0,155.0,80.0,Moderate,Heavy,High,9.7,Hackney,1
+73,Female,Yes,Yes,No,No,24.2,157.0,118.0,83.0,Moderate,None,Low,7.8,Greenwich,1
+30,Male,No,No,No,No,26.4,186.0,122.0,94.0,Moderate,Light,High,8.3,Waltham Forest,0
+83,Male,No,No,No,No,27.3,192.0,138.0,64.0,Moderate,Moderate,High,7.1,Greenwich,1
+70,Female,No,Yes,No,Yes,23.1,173.0,112.0,97.0,Low,Moderate,Moderate,5.1,Redbridge,1
+37,Female,No,Yes,No,No,29.8,250.0,137.0,82.0,Moderate,None,Low,5.5,Richmond upon Thames,1
+67,Female,Yes,No,No,Yes,25.9,196.0,121.0,106.0,Low,Moderate,Moderate,5.7,Haringey,1
+40,Female,No,Yes,No,No,21.4,183.0,114.0,60.0,High,Moderate,Moderate,7.2,Hammersmith and Fulham,1
+22,Female,No,Yes,No,Yes,28.4,184.0,118.0,109.0,High,None,Moderate,4.8,Harrow,0
+47,Male,No,Yes,No,No,27.0,221.0,90.0,85.0,Moderate,Moderate,Low,6.4,City of London,1
+23,Female,Yes,No,No,No,25.1,256.0,143.0,104.0,Moderate,Moderate,Moderate,4.9,Richmond upon Thames,1
+79,Male,Yes,No,No,No,27.1,193.0,137.0,78.0,High,Light,Moderate,10.3,Hillingdon,1
+39,Female,No,No,No,No,25.6,237.0,104.0,77.0,High,None,Moderate,6.6,Barnet,1
+69,Male,No,Yes,No,No,28.9,194.0,117.0,105.0,Low,Moderate,Low,5.7,Bexley,1
+76,Male,No,No,Yes,No,21.1,238.0,112.0,83.0,Moderate,Moderate,Moderate,5.1,Barnet,1
+18,Female,No,No,Yes,No,30.1,263.0,107.0,68.0,Moderate,Light,Moderate,8.3,Bexley,1
+63,Female,No,Yes,No,No,27.6,241.0,126.0,90.0,Moderate,Moderate,Moderate,7.5,Merton,1
+19,Male,Yes,No,No,No,24.9,243.0,136.0,67.0,High,Light,Low,7.4,Richmond upon Thames,0
+38,Female,No,No,No,No,24.4,250.0,128.0,89.0,Low,Light,Low,6.9,Waltham Forest,1
+62,Female,No,No,No,No,30.8,244.0,107.0,70.0,Moderate,Moderate,Moderate,6.2,Hackney,1
+63,Male,No,No,No,No,27.6,214.0,132.0,79.0,Moderate,Moderate,High,10.6,Greenwich,1
+63,Male,No,No,No,Yes,26.2,189.0,134.0,88.0,High,Moderate,High,4.0,Hammersmith and Fulham,1
+78,Male,No,Yes,No,Yes,26.8,180.0,162.0,80.0,Moderate,Heavy,Low,5.2,Sutton,1
+18,Male,No,Yes,Yes,No,26.5,195.0,108.0,85.0,High,Moderate,Moderate,7.0,Hillingdon,0
+22,Female,No,No,No,No,19.7,223.0,142.0,83.0,Low,Light,High,8.0,Hillingdon,0
+50,Female,Yes,No,No,Yes,26.6,157.0,113.0,81.0,Low,Moderate,Moderate,8.7,Brent,1
+56,Female,No,Yes,Yes,Yes,25.5,203.0,111.0,78.0,Low,Light,Low,7.0,Redbridge,1
+77,Female,No,No,No,No,30.7,176.0,143.0,61.0,Low,Light,Moderate,8.2,Enfield,1
+41,Male,Yes,No,No,No,24.1,249.0,119.0,79.0,Moderate,Light,Moderate,6.4,Croydon,1
+46,Male,No,No,No,No,24.4,211.0,157.0,80.0,Moderate,Moderate,Moderate,7.0,Kensington and Chelsea,1
+75,Female,No,Yes,No,No,18.0,231.0,130.0,98.0,High,Light,Moderate,5.4,Haringey,1
+50,Male,No,No,No,No,24.6,247.0,128.0,60.0,Moderate,Light,Moderate,4.7,Camden,1
+51,Male,Yes,No,No,No,23.1,188.0,112.0,72.0,Low,Light,Low,4.2,Hounslow,1
+24,Male,No,Yes,No,Yes,27.9,122.0,90.0,91.0,Moderate,Light,Moderate,7.8,Southwark,1
+34,Female,No,No,No,Yes,26.0,146.0,149.0,66.0,Moderate,Moderate,Low,7.3,Lambeth,1
+55,Female,No,No,No,No,31.7,183.0,145.0,60.0,Low,Light,Moderate,8.0,Lewisham,1
+43,Male,No,No,No,No,28.2,238.0,139.0,73.0,Low,Moderate,Low,5.0,Merton,1
+46,Female,No,No,Yes,No,25.4,193.0,113.0,80.0,Moderate,None,Moderate,6.9,Lewisham,1
+49,Female,No,Yes,No,Yes,25.9,235.0,119.0,79.0,Low,Light,Moderate,7.3,Bexley,1
+47,Female,No,No,No,No,26.2,260.0,114.0,73.0,Low,Moderate,Moderate,5.7,Ealing,1
+46,Male,Yes,Yes,No,Yes,22.8,203.0,144.0,78.0,High,Heavy,Moderate,8.7,Tower Hamlets,1
+45,Male,No,No,No,No,22.8,189.0,136.0,86.0,Moderate,Heavy,Moderate,7.1,Redbridge,1
+26,Male,No,Yes,Yes,No,26.4,225.0,117.0,81.0,Low,Light,Moderate,6.0,Havering,1
+38,Female,No,No,No,No,24.1,167.0,116.0,60.0,High,None,Moderate,6.9,Hammersmith and Fulham,0
+26,Male,No,No,No,Yes,27.2,145.0,103.0,95.0,Moderate,Heavy,Low,4.4,Barking and Dagenham,1
+60,Male,No,No,Yes,No,18.6,231.0,131.0,107.0,Low,Light,Low,5.5,Bexley,1
+31,Female,Yes,Yes,No,No,23.3,239.0,150.0,101.0,High,Light,Moderate,5.7,Brent,1
+82,Female,No,No,No,No,26.5,220.0,96.0,82.0,High,Light,High,4.0,Hounslow,1
+41,Male,No,Yes,No,No,28.8,213.0,109.0,92.0,Moderate,Moderate,Moderate,7.2,Newham,1
+80,Female,Yes,No,No,No,21.9,185.0,143.0,94.0,Low,Moderate,Moderate,6.3,Islington,1
+70,Male,No,No,No,No,23.9,253.0,147.0,82.0,Low,Light,High,5.1,Hammersmith and Fulham,1
+37,Female,Yes,No,No,No,24.3,160.0,93.0,60.0,Low,Moderate,Moderate,5.3,Westminster,1
+51,Female,No,No,No,No,32.7,212.0,142.0,101.0,High,Moderate,Moderate,7.7,Barking and Dagenham,1
+42,Male,No,Yes,No,No,20.8,194.0,152.0,60.0,Low,None,Low,9.3,City of London,1
+50,Male,No,No,No,No,25.7,241.0,102.0,81.0,Low,None,High,8.4,Havering,1
+71,Male,Yes,No,Yes,No,24.5,235.0,154.0,99.0,Moderate,Moderate,Moderate,8.9,Westminster,1
+72,Female,No,No,No,No,28.3,252.0,151.0,85.0,Low,Light,Moderate,9.1,Haringey,1
+44,Male,No,No,Yes,Yes,25.4,176.0,108.0,77.0,Moderate,None,Moderate,7.1,Tower Hamlets,1
+59,Female,No,No,No,No,21.5,194.0,140.0,78.0,Moderate,Moderate,High,8.2,Kingston upon Thames,1
+42,Female,Yes,No,No,Yes,30.0,152.0,112.0,102.0,High,Moderate,Moderate,7.1,Waltham Forest,1
+63,Female,No,No,No,Yes,22.0,120.0,101.0,60.0,Low,Heavy,Low,9.1,Bromley,1
+34,Male,No,No,No,No,25.8,240.0,112.0,97.0,Low,Moderate,Low,5.4,Lambeth,1
+38,Female,No,Yes,No,Yes,23.8,190.0,153.0,95.0,Low,Moderate,Low,6.0,Hillingdon,1
+63,Female,Yes,Yes,No,No,33.7,174.0,153.0,63.0,Low,Light,Moderate,6.5,Ealing,1
+28,Male,Yes,Yes,No,No,20.2,172.0,113.0,78.0,Moderate,None,Moderate,6.7,Bromley,1
+21,Male,No,No,No,No,27.2,228.0,136.0,69.0,High,Moderate,High,8.7,Southwark,0
+69,Male,Yes,No,No,No,25.3,187.0,131.0,84.0,Low,Heavy,High,6.2,Hammersmith and Fulham,1
+72,Female,No,No,No,No,24.8,260.0,142.0,79.0,Moderate,None,High,6.6,Haringey,1
+53,Female,No,Yes,No,No,34.7,228.0,146.0,70.0,Moderate,Light,Moderate,7.1,Hackney,1
+50,Female,No,No,No,No,28.0,240.0,140.0,77.0,Low,Light,High,7.3,City of London,1
+45,Male,No,Yes,No,No,30.2,254.0,136.0,88.0,High,Moderate,Low,7.4,Sutton,1
+56,Female,No,No,No,No,28.0,132.0,127.0,68.0,Low,Heavy,Moderate,8.2,Merton,1
+59,Female,No,No,No,No,33.8,127.0,126.0,97.0,Moderate,Heavy,Moderate,6.8,Richmond upon Thames,1
+81,Female,No,No,No,No,25.1,211.0,123.0,91.0,Low,Moderate,High,7.2,Southwark,1
+48,Female,No,Yes,Yes,No,29.8,184.0,105.0,73.0,High,Moderate,Low,4.1,Hillingdon,1
+35,Female,No,Yes,No,No,23.4,234.0,149.0,60.0,High,None,Low,7.4,Newham,1
+33,Male,No,No,No,Yes,22.9,236.0,162.0,90.0,High,Light,Low,9.3,Camden,1
+37,Male,Yes,Yes,No,No,22.0,205.0,132.0,64.0,Low,Moderate,Low,8.4,City of London,1
+50,Male,No,No,No,No,26.3,171.0,94.0,69.0,High,Moderate,High,4.9,Redbridge,1
+55,Female,No,No,No,No,28.8,214.0,130.0,90.0,Moderate,Light,Moderate,8.2,Hillingdon,1
+76,Male,No,No,Yes,No,22.4,229.0,158.0,76.0,Low,Light,Moderate,10.1,Wandsworth,1
+34,Male,Yes,No,No,No,26.3,159.0,135.0,65.0,Moderate,None,Moderate,10.5,City of London,1
+64,Female,No,No,Yes,No,25.8,144.0,127.0,88.0,Low,Light,Low,9.5,Barnet,1
+29,Female,No,No,No,Yes,26.7,186.0,118.0,60.0,High,None,High,8.4,Barking and Dagenham,0
+72,Male,Yes,No,No,No,23.4,224.0,129.0,68.0,Low,None,Low,7.9,Redbridge,1
+74,Female,Yes,No,No,Yes,22.4,148.0,157.0,91.0,Moderate,None,Low,7.3,Bromley,1
+51,Female,No,No,No,No,23.2,174.0,119.0,88.0,Low,Light,Low,8.6,Greenwich,1
+83,Male,Yes,No,Yes,Yes,24.3,188.0,108.0,70.0,Moderate,Heavy,Low,5.9,Sutton,1
+83,Female,No,Yes,Yes,No,21.1,217.0,129.0,60.0,Moderate,Light,Low,7.2,Bromley,1
+23,Male,Yes,No,No,No,25.3,155.0,135.0,60.0,Low,Light,Moderate,6.9,Southwark,0
+48,Female,No,No,No,No,24.0,194.0,115.0,63.0,High,Light,Low,7.5,Sutton,1
+22,Male,Yes,Yes,No,No,28.0,181.0,137.0,68.0,High,Light,Moderate,8.8,Hammersmith and Fulham,0
+56,Male,No,No,No,No,27.8,209.0,114.0,60.0,Low,Moderate,High,8.5,Camden,1
+83,Male,No,No,No,Yes,24.5,209.0,112.0,106.0,Moderate,Light,Moderate,6.0,Wandsworth,1
+44,Female,No,No,Yes,No,21.7,181.0,148.0,103.0,Low,None,High,4.0,Kensington and Chelsea,1
+80,Female,No,No,No,Yes,24.7,180.0,133.0,92.0,High,None,Moderate,10.6,Barking and Dagenham,1
+81,Female,No,Yes,No,Yes,26.4,256.0,144.0,81.0,Moderate,Moderate,High,8.1,Westminster,1
+75,Male,No,No,Yes,No,23.6,206.0,137.0,110.0,Moderate,Moderate,High,8.4,Havering,1
+68,Female,No,Yes,No,Yes,27.0,123.0,154.0,90.0,High,Light,Low,6.4,Hillingdon,1
+29,Female,Yes,Yes,No,Yes,33.2,220.0,109.0,76.0,Low,Light,Moderate,7.5,Lambeth,1
+75,Male,No,No,No,No,25.7,170.0,101.0,90.0,Moderate,Moderate,Moderate,9.5,Islington,1
+32,Male,No,No,No,Yes,25.9,258.0,124.0,88.0,Low,Heavy,Moderate,8.3,Croydon,1
+27,Female,Yes,No,No,No,20.6,188.0,90.0,60.0,Moderate,None,Moderate,9.8,Brent,0
+60,Female,No,No,No,No,22.7,155.0,122.0,69.0,Low,Moderate,Moderate,4.6,Harrow,1
+19,Male,No,No,No,No,31.1,181.0,121.0,77.0,High,Heavy,Low,6.8,Southwark,0
+18,Female,No,No,No,No,24.5,165.0,118.0,91.0,Moderate,Light,High,7.5,Hackney,0
+41,Male,No,Yes,Yes,Yes,28.3,185.0,187.0,105.0,High,Light,Low,4.6,Greenwich,1
+46,Male,Yes,No,Yes,No,22.9,203.0,117.0,90.0,Moderate,Heavy,Moderate,8.5,Haringey,1
+49,Female,No,Yes,No,No,33.2,194.0,155.0,60.0,Low,None,Moderate,4.7,Croydon,1
+69,Male,No,No,Yes,Yes,24.1,144.0,137.0,87.0,Low,None,Moderate,5.7,Bexley,1
+57,Male,No,No,No,No,25.9,120.0,101.0,75.0,High,Light,Moderate,7.7,Greenwich,1
+24,Female,No,No,No,No,35.7,167.0,158.0,85.0,Low,None,Moderate,7.1,Redbridge,1
+83,Female,No,Yes,Yes,No,25.3,255.0,110.0,73.0,Moderate,Moderate,Low,8.0,Brent,1
+35,Female,Yes,No,No,No,25.4,239.0,138.0,72.0,High,None,Moderate,7.9,Newham,1
+27,Male,No,Yes,No,No,19.6,172.0,94.0,88.0,Low,Moderate,Moderate,8.8,Lambeth,0
+51,Female,No,No,No,No,22.9,180.0,120.0,68.0,High,None,Moderate,6.5,Hounslow,1
+65,Female,No,Yes,Yes,Yes,31.6,202.0,133.0,72.0,Moderate,None,Moderate,6.4,Waltham Forest,1
+46,Female,No,Yes,Yes,Yes,29.2,132.0,126.0,64.0,Moderate,Light,Moderate,10.2,Sutton,1
+77,Female,No,Yes,No,No,28.5,215.0,133.0,97.0,High,Light,Moderate,6.2,Haringey,1
+82,Female,No,No,Yes,No,27.3,173.0,112.0,67.0,Low,None,Moderate,9.8,Haringey,1
+78,Female,No,No,Yes,No,31.5,188.0,120.0,104.0,Low,Light,Moderate,5.1,Barking and Dagenham,1
+47,Male,No,No,No,No,26.6,183.0,131.0,101.0,Low,None,Moderate,7.1,Havering,1
+42,Female,Yes,Yes,No,Yes,31.0,216.0,145.0,92.0,Moderate,None,Low,5.4,Havering,1
+18,Male,No,No,No,No,28.7,194.0,130.0,67.0,High,Light,Moderate,6.4,Camden,0
+28,Male,No,No,No,No,20.7,120.0,116.0,82.0,Moderate,Heavy,High,7.2,Camden,0
+80,Male,No,Yes,No,Yes,32.9,202.0,104.0,71.0,Moderate,Heavy,High,7.3,Newham,1
+59,Male,No,Yes,No,No,18.4,212.0,106.0,74.0,Low,Light,Low,7.8,Hounslow,1
+52,Female,Yes,No,No,Yes,32.5,180.0,105.0,62.0,Low,Heavy,Moderate,6.7,Brent,1
+71,Male,Yes,No,No,No,22.9,235.0,116.0,90.0,Moderate,Light,Moderate,6.4,Greenwich,1
+27,Male,No,No,Yes,No,34.5,191.0,90.0,102.0,Moderate,Moderate,Low,7.8,Southwark,1
+66,Male,Yes,Yes,Yes,No,20.2,183.0,104.0,92.0,Low,Light,Moderate,7.6,Enfield,1
+79,Male,No,No,No,Yes,21.1,261.0,146.0,97.0,High,Moderate,Low,5.6,Lewisham,1
+61,Male,Yes,No,No,No,25.3,208.0,170.0,90.0,Moderate,None,Low,4.8,Wandsworth,1
+65,Female,No,Yes,No,No,20.4,243.0,127.0,67.0,Low,None,Low,4.0,City of London,1
+83,Female,No,No,No,Yes,18.1,199.0,136.0,84.0,High,None,Moderate,6.5,Sutton,1
+50,Female,No,Yes,No,No,23.9,215.0,138.0,76.0,Moderate,Heavy,Moderate,4.0,Barking and Dagenham,1
+20,Male,No,Yes,No,Yes,30.0,197.0,108.0,107.0,High,Moderate,Moderate,5.7,Southwark,0
+66,Female,No,No,Yes,Yes,18.0,230.0,133.0,86.0,Low,Light,Low,5.9,Hounslow,1
+62,Female,No,No,No,No,24.5,283.0,139.0,61.0,High,None,Moderate,6.8,Hackney,1
+61,Female,No,Yes,No,No,32.3,184.0,140.0,89.0,High,Heavy,Low,8.1,Harrow,1
+63,Male,No,No,No,No,24.7,120.0,120.0,98.0,Low,Light,High,7.5,Enfield,1
+82,Male,No,Yes,No,No,25.1,194.0,133.0,91.0,Low,Moderate,Moderate,8.0,Wandsworth,1
+66,Female,No,No,Yes,No,23.8,227.0,108.0,104.0,High,Heavy,Moderate,9.2,Bexley,1
+32,Female,No,No,No,No,23.0,174.0,145.0,71.0,High,Light,Low,5.7,Wandsworth,0
+40,Female,No,No,No,Yes,25.1,214.0,113.0,96.0,High,None,High,7.6,Barnet,1
+72,Female,No,Yes,No,Yes,23.7,200.0,129.0,82.0,Low,Moderate,Low,7.7,Richmond upon Thames,1
+27,Male,No,No,No,No,29.0,146.0,152.0,78.0,Moderate,Light,Moderate,7.9,Harrow,0
+28,Male,Yes,No,No,Yes,22.1,216.0,127.0,90.0,Moderate,Light,Low,6.9,Lambeth,1
+22,Male,Yes,No,No,No,24.8,124.0,124.0,60.0,Moderate,Heavy,High,6.8,Bexley,1
+18,Male,No,Yes,No,No,22.2,120.0,170.0,66.0,High,Moderate,High,4.0,Westminster,0
+51,Female,No,Yes,Yes,No,26.6,197.0,124.0,80.0,High,None,Moderate,8.0,Hounslow,1
+80,Female,No,No,No,No,29.4,281.0,113.0,98.0,High,Light,Low,6.4,Westminster,1
+83,Male,No,No,Yes,No,30.7,262.0,119.0,76.0,Moderate,None,Moderate,5.9,Harrow,1
+61,Male,No,No,No,No,21.6,153.0,139.0,95.0,Moderate,Moderate,High,6.8,Ealing,1
+27,Male,No,No,No,Yes,28.0,201.0,112.0,90.0,Moderate,Moderate,Low,7.5,Haringey,0
+69,Female,No,No,Yes,No,23.3,241.0,117.0,85.0,Low,Light,High,6.9,Camden,1
+41,Female,No,Yes,No,No,22.9,206.0,104.0,79.0,High,Light,Moderate,7.5,Kingston upon Thames,1
+47,Female,Yes,Yes,No,No,25.8,150.0,142.0,86.0,Moderate,Moderate,High,9.2,Haringey,1
+30,Female,No,Yes,No,No,28.7,247.0,181.0,65.0,Moderate,Moderate,Low,7.2,Islington,1
+32,Female,No,No,No,No,22.9,228.0,172.0,65.0,High,Light,Moderate,6.5,Croydon,1
+81,Female,No,Yes,Yes,No,27.1,306.0,153.0,66.0,Moderate,None,Low,8.5,Sutton,1
+55,Male,No,No,No,No,33.1,151.0,151.0,95.0,High,Moderate,Moderate,4.5,Camden,1
+30,Female,No,No,No,No,23.9,242.0,119.0,97.0,Moderate,Moderate,Moderate,6.1,Lambeth,1
+46,Male,No,No,No,No,24.0,143.0,144.0,91.0,High,Heavy,Moderate,4.4,Ealing,1
+66,Male,No,No,No,No,27.3,192.0,136.0,73.0,Moderate,Light,Moderate,8.1,Islington,1
+20,Male,Yes,No,No,No,21.7,205.0,127.0,88.0,Moderate,Heavy,Moderate,7.1,Westminster,0
+66,Female,No,No,No,No,23.7,140.0,155.0,73.0,High,Light,Moderate,5.1,Ealing,1
+65,Female,Yes,No,Yes,Yes,24.9,208.0,131.0,76.0,Moderate,None,Low,6.9,Ealing,1
+41,Female,Yes,No,No,No,26.6,245.0,92.0,93.0,High,Moderate,High,5.9,Lambeth,1
+27,Female,No,Yes,Yes,No,18.0,222.0,177.0,72.0,Moderate,Light,Moderate,7.6,Greenwich,1
+32,Male,No,Yes,No,Yes,26.3,188.0,148.0,88.0,High,Light,Moderate,7.0,Croydon,1
+43,Male,No,No,No,No,24.0,162.0,155.0,77.0,Moderate,Moderate,Moderate,7.3,Tower Hamlets,1
+76,Female,Yes,Yes,No,No,23.5,203.0,98.0,74.0,Moderate,None,Moderate,7.9,Bromley,1
+73,Female,No,No,No,No,24.9,207.0,129.0,71.0,Moderate,Light,Low,8.4,Southwark,1
+75,Male,No,No,No,Yes,26.4,213.0,129.0,74.0,Moderate,Moderate,High,6.4,Kingston upon Thames,1
+77,Male,No,Yes,No,No,24.4,206.0,156.0,82.0,Low,Moderate,Low,7.1,Camden,1
+29,Male,No,Yes,No,No,24.5,208.0,130.0,65.0,High,Heavy,Moderate,6.9,Southwark,0
+46,Male,No,No,No,No,20.3,236.0,160.0,63.0,High,Light,Moderate,6.8,Lewisham,1
+60,Female,No,No,Yes,No,29.9,173.0,92.0,84.0,Moderate,None,Low,6.1,Barnet,1
+81,Female,No,Yes,Yes,Yes,26.4,187.0,143.0,79.0,Moderate,None,High,7.3,Waltham Forest,1
+78,Male,Yes,No,No,No,28.3,179.0,146.0,98.0,Moderate,Light,Moderate,6.5,Lewisham,1
+48,Male,No,Yes,No,No,27.8,186.0,131.0,90.0,Moderate,Moderate,High,5.2,Richmond upon Thames,1
+24,Female,No,No,No,No,31.2,201.0,111.0,60.0,Moderate,None,Low,9.3,Brent,1
+44,Female,No,No,No,No,24.9,196.0,192.0,76.0,Moderate,None,Low,7.8,Havering,1
+62,Male,No,No,No,Yes,30.0,242.0,114.0,67.0,Moderate,Moderate,Moderate,5.3,Barking and Dagenham,1
+83,Male,No,No,No,Yes,18.0,186.0,184.0,77.0,Moderate,Heavy,Low,8.7,Harrow,1
+60,Female,No,Yes,No,No,19.2,174.0,116.0,72.0,Moderate,None,Low,5.0,Richmond upon Thames,1
+24,Male,Yes,Yes,Yes,No,25.4,166.0,167.0,89.0,Low,None,High,6.0,Tower Hamlets,1
+28,Female,No,No,No,No,23.6,133.0,128.0,81.0,High,Heavy,Moderate,7.2,Hackney,1
+70,Female,No,No,No,No,27.3,227.0,143.0,107.0,High,None,Low,4.4,Richmond upon Thames,1
+76,Male,No,Yes,Yes,No,27.4,152.0,100.0,60.0,Moderate,Moderate,Low,8.1,Enfield,1
+38,Male,No,Yes,Yes,No,29.2,216.0,111.0,71.0,Low,Light,Moderate,7.4,Harrow,1
+45,Male,No,Yes,No,No,22.4,120.0,114.0,76.0,High,Light,Low,8.6,Tower Hamlets,1
+73,Male,No,No,No,No,22.1,228.0,124.0,61.0,Moderate,Moderate,High,7.6,Camden,1
+84,Female,Yes,No,Yes,No,23.4,172.0,117.0,74.0,Moderate,Moderate,Low,6.0,Richmond upon Thames,1
+31,Male,Yes,No,No,No,28.3,218.0,117.0,88.0,High,Moderate,Moderate,6.4,Croydon,1
+43,Male,No,Yes,No,No,19.4,182.0,150.0,84.0,High,Light,Moderate,4.9,City of London,1
+36,Male,No,Yes,No,No,24.2,204.0,133.0,94.0,Low,Light,Moderate,7.1,Greenwich,1
+68,Female,No,No,Yes,Yes,19.7,243.0,131.0,96.0,Low,Light,Moderate,6.9,Newham,1
+27,Male,No,No,No,No,26.6,155.0,131.0,79.0,High,Light,Moderate,7.3,Greenwich,0
+30,Female,No,No,No,No,22.9,271.0,132.0,87.0,High,Moderate,Moderate,6.8,Havering,0
+78,Male,Yes,Yes,No,No,23.9,169.0,140.0,60.0,Low,Light,Low,8.7,Westminster,1
+69,Male,No,No,No,No,27.9,200.0,148.0,70.0,Moderate,Heavy,Low,8.1,Redbridge,1
+56,Female,No,No,No,Yes,30.0,135.0,135.0,67.0,High,Heavy,Low,6.2,Brent,1
+29,Male,No,Yes,Yes,No,29.2,228.0,154.0,66.0,Moderate,None,Moderate,7.5,Lewisham,1
+20,Female,No,No,No,No,22.2,238.0,125.0,97.0,Moderate,Light,Low,5.9,Lambeth,0
+64,Male,No,Yes,Yes,No,25.4,153.0,119.0,80.0,Moderate,Moderate,Low,7.7,Newham,1
+26,Male,No,No,No,Yes,28.7,185.0,121.0,102.0,Low,Light,Moderate,4.6,Islington,1
+20,Male,No,No,No,No,26.7,163.0,153.0,80.0,Low,Moderate,High,4.5,Bromley,0
+44,Female,No,Yes,No,No,39.0,236.0,142.0,92.0,Moderate,None,High,5.8,Newham,1
+50,Male,No,No,No,No,22.8,138.0,150.0,73.0,High,Light,Moderate,8.4,Tower Hamlets,1
+36,Female,No,No,Yes,No,26.5,220.0,109.0,96.0,Moderate,None,Moderate,4.9,Kingston upon Thames,1
+60,Male,No,Yes,Yes,No,27.0,219.0,110.0,104.0,High,Moderate,Low,10.0,Brent,1
+25,Male,No,No,No,No,28.4,179.0,108.0,112.0,Moderate,Light,Moderate,7.2,Lambeth,0
+25,Female,No,No,No,No,29.8,151.0,136.0,61.0,Moderate,Light,Moderate,6.6,Tower Hamlets,1
+74,Male,No,No,No,No,27.7,222.0,134.0,84.0,Low,Moderate,Moderate,4.6,Southwark,1
+49,Female,No,Yes,No,No,20.3,177.0,92.0,72.0,Moderate,Light,Moderate,8.6,Redbridge,1
+22,Female,No,No,No,Yes,27.0,182.0,156.0,63.0,Moderate,Light,Low,5.5,Wandsworth,0
+67,Female,No,No,No,No,26.8,162.0,131.0,71.0,Moderate,Moderate,Low,8.4,Greenwich,1
+33,Male,No,No,No,No,25.5,183.0,144.0,69.0,Moderate,Light,High,5.7,Hammersmith and Fulham,1
+66,Female,Yes,No,No,Yes,29.5,132.0,146.0,92.0,Moderate,None,Moderate,8.4,Haringey,1
+58,Male,No,No,No,Yes,24.6,204.0,156.0,88.0,Moderate,Light,Moderate,4.0,Merton,1
+36,Female,No,No,Yes,No,31.5,241.0,123.0,93.0,Low,Heavy,High,7.5,Redbridge,1
+60,Male,No,No,No,No,26.0,213.0,131.0,91.0,Moderate,Light,Low,5.5,Brent,1
+20,Female,No,Yes,No,Yes,27.2,151.0,163.0,86.0,Low,Light,Moderate,4.3,Haringey,1
+60,Female,No,No,No,Yes,21.5,156.0,123.0,88.0,Moderate,None,Moderate,8.0,Southwark,1
+58,Female,No,No,Yes,Yes,30.8,195.0,124.0,87.0,Moderate,Light,Moderate,6.2,Bexley,1
+31,Female,No,No,No,No,29.9,226.0,123.0,80.0,Low,Moderate,Moderate,6.6,Greenwich,1
+77,Male,No,Yes,No,No,28.4,135.0,114.0,86.0,Moderate,Light,Moderate,6.2,Lewisham,1
+36,Male,No,No,No,Yes,29.0,205.0,128.0,71.0,High,Moderate,Low,6.5,Havering,1
+77,Female,No,No,No,Yes,21.4,203.0,135.0,69.0,Moderate,Heavy,Moderate,6.1,Hammersmith and Fulham,1
+61,Male,No,No,No,No,28.0,171.0,123.0,60.0,Low,Light,High,5.2,Merton,1
+78,Male,No,No,No,No,30.2,149.0,140.0,67.0,Low,None,Low,6.7,Kingston upon Thames,1
+50,Female,No,No,No,No,33.5,229.0,132.0,87.0,High,Moderate,Low,6.6,Southwark,1
+65,Male,No,No,No,No,25.2,169.0,149.0,99.0,Moderate,Light,Moderate,4.8,Hillingdon,1
+72,Female,No,No,No,No,27.7,240.0,122.0,60.0,High,None,Moderate,6.3,Greenwich,1
+22,Male,No,No,No,No,30.4,177.0,131.0,94.0,Low,None,Low,6.3,Barnet,0
+42,Female,Yes,No,No,No,20.5,236.0,115.0,60.0,High,Heavy,Moderate,7.0,Barking and Dagenham,1
+38,Female,No,No,No,Yes,31.3,288.0,123.0,60.0,Moderate,Light,High,8.9,Merton,1
+45,Male,No,No,Yes,Yes,22.9,165.0,144.0,87.0,Moderate,Light,Moderate,6.8,Redbridge,1
+73,Female,No,Yes,No,No,30.5,128.0,160.0,98.0,Low,Heavy,Moderate,7.3,Lambeth,1
+35,Female,Yes,No,No,No,20.7,129.0,123.0,106.0,High,Moderate,Low,8.1,Kensington and Chelsea,0
+42,Female,No,No,No,No,22.1,190.0,172.0,85.0,High,Light,Moderate,6.8,Islington,1
+79,Male,No,No,No,No,29.1,164.0,138.0,68.0,Low,Heavy,Moderate,6.3,Barnet,1
+71,Female,Yes,No,No,No,21.8,199.0,150.0,90.0,Moderate,Light,Moderate,6.9,Hounslow,1
+83,Male,Yes,No,Yes,No,18.3,259.0,146.0,85.0,High,Light,Moderate,4.6,Harrow,1
+73,Male,No,No,Yes,No,20.1,241.0,105.0,60.0,Moderate,Moderate,Low,7.1,Hackney,1
+69,Female,No,Yes,No,No,23.8,147.0,161.0,72.0,High,Heavy,Low,7.0,Harrow,1
+48,Male,No,Yes,Yes,No,33.0,198.0,141.0,78.0,High,None,Moderate,11.0,Hammersmith and Fulham,1
+44,Male,No,No,Yes,No,24.9,255.0,154.0,80.0,Low,Moderate,Low,6.9,Redbridge,1
+32,Female,No,No,No,Yes,19.1,136.0,152.0,70.0,Moderate,None,Moderate,6.8,Croydon,1
+82,Male,No,No,No,No,24.2,251.0,151.0,80.0,Moderate,Light,Low,8.5,Kingston upon Thames,1
+18,Female,No,Yes,No,No,29.9,264.0,124.0,103.0,High,Moderate,Moderate,10.3,Waltham Forest,0
+29,Male,No,Yes,No,No,21.4,155.0,114.0,84.0,Moderate,Moderate,High,5.8,Kensington and Chelsea,1
+31,Female,No,No,No,No,22.4,247.0,110.0,78.0,High,None,Low,9.9,Richmond upon Thames,1
+58,Female,No,No,No,No,24.5,156.0,137.0,65.0,Moderate,Moderate,Moderate,7.4,Enfield,1
+46,Male,No,Yes,No,Yes,21.9,181.0,135.0,72.0,Low,None,High,7.9,Waltham Forest,1
+83,Male,No,Yes,No,No,29.2,169.0,99.0,88.0,Low,None,Low,8.3,Redbridge,1
+43,Female,No,No,No,No,25.2,195.0,109.0,60.0,Moderate,None,Moderate,7.7,Camden,1
+44,Male,Yes,Yes,Yes,No,24.7,142.0,143.0,90.0,Moderate,Light,Low,9.1,Lambeth,1
+46,Male,No,No,No,No,27.6,168.0,134.0,91.0,Moderate,Heavy,Low,7.8,Newham,1
+20,Female,No,No,No,No,25.1,142.0,149.0,97.0,High,Heavy,High,4.1,Tower Hamlets,0
+65,Male,No,Yes,No,Yes,24.4,206.0,148.0,87.0,Moderate,Light,Moderate,7.8,Croydon,1
+83,Male,Yes,Yes,No,No,23.5,234.0,112.0,90.0,Moderate,Moderate,Low,5.8,Merton,1
+46,Male,No,Yes,Yes,No,32.6,188.0,142.0,88.0,Moderate,None,High,7.2,Tower Hamlets,1
+80,Male,Yes,No,No,Yes,27.7,221.0,146.0,71.0,Low,None,Moderate,6.0,Merton,1
+82,Male,Yes,No,No,No,24.3,272.0,136.0,71.0,High,Moderate,High,8.5,Wandsworth,1
+18,Male,No,No,No,No,21.6,180.0,102.0,97.0,High,None,Moderate,4.0,Westminster,0
+38,Female,No,No,No,No,18.0,191.0,173.0,60.0,High,Moderate,Low,4.0,Barnet,1
+43,Female,No,No,No,No,25.2,179.0,139.0,60.0,Moderate,Light,Moderate,7.4,Waltham Forest,1
+59,Male,No,Yes,No,Yes,18.1,194.0,123.0,73.0,Low,Moderate,Low,7.5,Southwark,1
+65,Male,No,No,No,No,18.0,236.0,121.0,88.0,Moderate,Moderate,Low,6.0,Barking and Dagenham,1
+23,Male,No,No,No,No,24.4,168.0,126.0,92.0,High,Moderate,Moderate,6.3,Richmond upon Thames,0
+69,Female,No,Yes,No,No,23.9,195.0,139.0,99.0,Low,Heavy,Low,7.0,Enfield,1
+83,Male,No,No,No,No,31.9,241.0,136.0,74.0,Low,Moderate,Moderate,7.0,Hounslow,1
+36,Male,No,Yes,Yes,Yes,22.5,244.0,137.0,98.0,Moderate,Light,Moderate,6.9,Ealing,1
+47,Male,No,No,Yes,Yes,24.5,220.0,140.0,100.0,Low,Light,Low,6.9,Haringey,1
+22,Male,Yes,No,No,No,29.8,138.0,113.0,105.0,High,Light,Moderate,6.7,City of London,1
+78,Male,No,Yes,Yes,Yes,20.9,259.0,140.0,77.0,High,Heavy,High,5.3,Waltham Forest,1
+68,Male,No,No,Yes,No,21.8,224.0,130.0,108.0,Low,Light,Low,8.1,Kensington and Chelsea,1
+36,Female,Yes,No,No,No,25.1,159.0,90.0,75.0,Low,Moderate,High,6.3,Wandsworth,1
+36,Male,No,No,No,Yes,32.1,249.0,117.0,69.0,Low,Light,High,8.0,Camden,1
+18,Male,No,No,No,No,29.1,164.0,115.0,73.0,Moderate,Light,High,4.0,Greenwich,0
+77,Male,Yes,No,No,Yes,27.6,169.0,124.0,73.0,High,None,Moderate,8.9,Hammersmith and Fulham,1
+46,Female,No,No,No,No,28.6,272.0,158.0,73.0,Moderate,Light,Low,7.9,Tower Hamlets,1
+51,Male,No,Yes,No,No,26.8,210.0,136.0,87.0,Low,Light,Moderate,5.8,Kensington and Chelsea,1
+29,Female,Yes,No,Yes,No,27.2,207.0,121.0,86.0,Moderate,None,Moderate,5.8,Camden,1
+42,Female,Yes,Yes,No,No,22.5,187.0,144.0,117.0,High,None,Low,6.7,Wandsworth,1
+49,Female,No,Yes,No,No,27.5,191.0,155.0,93.0,Moderate,Heavy,Low,9.9,Richmond upon Thames,1
+20,Female,No,No,No,No,27.8,145.0,151.0,76.0,Moderate,None,Moderate,8.9,Hounslow,0
+73,Female,No,No,No,No,18.0,187.0,148.0,60.0,Moderate,Moderate,Moderate,6.3,Sutton,1
+71,Female,No,Yes,No,No,25.9,254.0,110.0,87.0,High,None,Moderate,5.2,Lambeth,1
+26,Female,No,No,No,No,28.2,223.0,144.0,85.0,Moderate,Light,Moderate,4.0,Enfield,0
+53,Male,No,No,No,Yes,28.3,218.0,161.0,99.0,Low,Moderate,Moderate,6.0,Waltham Forest,1
+64,Female,No,No,No,Yes,26.9,160.0,145.0,90.0,High,Light,Moderate,7.1,Havering,1
+43,Female,No,Yes,No,No,26.3,185.0,98.0,68.0,High,Moderate,Moderate,7.6,Hammersmith and Fulham,1
+80,Male,No,No,Yes,No,21.6,199.0,110.0,90.0,Low,None,High,5.9,Merton,1
+70,Male,No,No,No,Yes,25.6,244.0,144.0,101.0,Moderate,None,Low,6.5,Westminster,1
+67,Male,Yes,Yes,No,No,19.8,171.0,120.0,65.0,Moderate,Light,Low,9.0,Westminster,1
+65,Male,No,No,No,No,20.8,209.0,140.0,79.0,High,None,Moderate,8.1,Merton,1
+51,Male,No,No,Yes,No,30.2,219.0,102.0,83.0,Low,None,Moderate,5.3,Newham,1
+70,Male,No,No,No,No,34.7,120.0,159.0,94.0,Moderate,Light,Moderate,7.4,Hackney,1
+31,Male,Yes,No,No,No,23.2,197.0,169.0,76.0,Moderate,Light,Low,8.2,Kensington and Chelsea,1
+47,Male,No,No,No,Yes,21.9,162.0,105.0,80.0,Moderate,Moderate,Moderate,5.1,Hounslow,1
+29,Female,No,Yes,Yes,No,26.9,250.0,154.0,95.0,Low,None,Moderate,6.6,Enfield,1
+24,Female,Yes,No,No,No,23.1,222.0,132.0,70.0,Moderate,Moderate,Moderate,5.0,Harrow,0
+65,Male,No,No,No,Yes,26.0,224.0,133.0,91.0,Low,Light,Low,4.0,Barnet,1
+23,Female,No,No,No,Yes,18.0,208.0,137.0,79.0,Moderate,Heavy,Moderate,6.0,Merton,0
+77,Female,No,No,No,Yes,22.3,180.0,116.0,101.0,Moderate,Light,High,10.4,Lewisham,1
+43,Female,No,No,No,No,23.2,186.0,124.0,75.0,Moderate,Moderate,Moderate,6.0,Enfield,1
+57,Female,No,No,No,No,18.0,196.0,119.0,64.0,Moderate,None,High,8.3,Ealing,1
+79,Female,No,Yes,No,Yes,19.3,212.0,99.0,89.0,Moderate,Moderate,Moderate,5.8,Hackney,1
+66,Female,No,No,No,Yes,23.8,273.0,105.0,103.0,Moderate,None,High,6.8,Havering,1
+62,Male,No,Yes,No,Yes,24.9,219.0,122.0,60.0,Moderate,Light,Low,4.2,Camden,1
+23,Female,Yes,No,No,No,27.0,219.0,135.0,110.0,Low,None,Low,6.2,Tower Hamlets,1
+46,Male,No,No,No,No,29.7,231.0,131.0,67.0,Low,None,Moderate,6.0,Barking and Dagenham,1
+78,Male,No,No,No,No,25.6,156.0,105.0,83.0,Moderate,Light,Moderate,5.9,Camden,1
+71,Female,No,No,No,No,26.9,222.0,150.0,90.0,Low,None,Low,6.5,Bexley,1
+41,Female,No,Yes,No,No,22.5,176.0,156.0,94.0,Low,Heavy,Moderate,5.3,Sutton,1
+65,Male,No,No,No,Yes,24.0,120.0,114.0,60.0,Low,Moderate,Moderate,6.9,Hackney,1
+54,Female,Yes,Yes,No,No,30.9,120.0,129.0,74.0,Low,Moderate,Moderate,8.0,Hillingdon,1
+42,Female,No,Yes,Yes,No,31.7,211.0,91.0,87.0,High,Light,Moderate,8.6,Camden,1

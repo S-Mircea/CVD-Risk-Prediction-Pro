@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  cvd-risk-app:
+    build: .
+    container_name: cvd-risk-predictor
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./user_data:/app/user_data
+      - ./environmental_data:/app/environmental_data
+    environment:
+      - FLASK_ENV=development
+    restart: unless-stopped
