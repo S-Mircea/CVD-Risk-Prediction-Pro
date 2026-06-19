@@ -77,14 +77,16 @@ CVD-Risk-Prediction-Pro/
 └── environmental_data/     # London borough data
 ```
 
-## 📈 Model Performance (Original)
+## 📈 Model Performance
 
-- **Algorithm**: Random Forest (200 estimators)
-- **Cross-Validation Accuracy**: 93.0% (±3.8%)
-- **Features**: 21 total (15 health + 6 environmental)
-- **Coverage**: All 33 London boroughs
+| Metric | Synthetic Data | **Real Data (Kaggle)** |
+|--------|---------------|----------------------|
+| Accuracy | 93.0% | **73.0%** |
+| Dataset Size | 1,000 records | **70,000 records** |
+| Confidence | ❌ Inflated | ✅ Realistic |
+| Features | 21 | 12 (focused) |
 
-> ⚠️ Current model trained on synthetic data. Real-world performance will differ. See [Future Enhancements](#-future-enhancements) for real data roadmap.
+> ✅ Now trained on real-world data from the [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset) (70K patients, 11 features). The lower accuracy is **honest** — real medical data is noisy and reflects actual prediction difficulty.
 
 ## 🗺️ London Environmental Data
 
@@ -95,7 +97,7 @@ The app integrates borough-specific data:
 
 ## 🎯 Future Enhancements
 
-- [ ] **Real-world data**: NHANES / UK Biobank integration (see `data/download_real_data.py`)
+- [x] **Real-world data**: ✅ Integrated Kaggle Cardiovascular Disease dataset (70K records)
 - [ ] Real-time London air quality via LAQN API
 - [ ] Genetic profiling markers
 - [ ] User accounts & risk tracking over time

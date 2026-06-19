@@ -150,4 +150,4 @@ Thumbs.db
 
 # Optional: Include trained models for demo purposes
 # Uncomment the line below if you want to exclude model files
-# *.pkl
+# *.pkl*.pkl

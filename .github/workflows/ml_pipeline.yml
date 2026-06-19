@@ -31,10 +31,4 @@ jobs:
         test -f cvd_risk_model.pkl && echo "Model trained and saved" || echo "Model not saved"
 
     - name: Verify model
-      run: |
-        python -c "
-import joblib
-data = joblib.load('app_code/cvd_risk_model.pkl')
-print(f'Model: {type(data[\"model\"]).__name__} - OK')
-print(f'Processor: {type(data[\"data_processor\"]).__name__} - OK')
-"
+      run: python app_code/verify_model.py
